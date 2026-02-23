@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 19.2 Linux
+parent: 19. How to install docker/podman
 description: ""
 ---
 
