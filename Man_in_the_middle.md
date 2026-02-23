@@ -5,6 +5,15 @@ has_children: true
 description: ""
 ---
 
+{%- assign children = site.pages | where: "parent", page.title | sort: "nav_order" -%}
+<ul>
+  {%- for child in children -%}
+    <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+  {%- endfor -%}
+</ul>
+
+---
+
 ### Man in the middle (MitM)
 > Bạn đang gửi một bức thư cho bạn của mình, nhưng trước khi bức thư đến tay bạn của bạn, một kẻ xấu đã mở thư, đọc nó, và có thể thay đổi nội dung trước khi gửi tiếp.
 > => Đó là cách MitM hoạt động.
@@ -36,7 +45,3 @@ MitM là một kiểu tấn công mạng trong đó kẻ tấn công chèn mình
 - Cảnh giác với Wifi công cộng: tránh sử dụng wifi công cộng không an toàn để truy cập các dịch vụ.
 
 [So sánh MitM và Hijacking](Hijacking.md#so%20sanh%20mitm%20va%20hijacking)
-
-
-
-
