@@ -3,6 +3,7 @@ layout: default
 title: 13.3 SOA
 parent: 13. Architectural Patterns
 description: ""
+permalink: /soa/
 ---
 
 ### SOA

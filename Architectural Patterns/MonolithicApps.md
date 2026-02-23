@@ -3,6 +3,7 @@ layout: default
 title: 13.1 Monolithic
 parent: 13. Architectural Patterns
 description: ""
+permalink: /monolithic-apps/
 ---
 
 #### Đặc điểm của ứng dụng Monolithic: 

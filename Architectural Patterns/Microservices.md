@@ -3,6 +3,7 @@ layout: default
 title: 13.2 Microservices
 parent: 13. Architectural Patterns
 description: ""
+permalink: /microservices/
 ---
 
 ### Microservices
