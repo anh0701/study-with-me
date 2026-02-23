@@ -6,3 +6,6 @@ title: Study With Me
 description: Log ghi chép quá trình tự học lập trình và các thuật toán.
 
 color_scheme: dark
+
+back_to_top: true
+back_to_top_text: "⬆️"

@@ -5,6 +5,12 @@ has_children: true
 description: ""
 ---
 
+<style>
+  .child_nav { display: none !important; }
+</style>
+
+## Table of contents
+
 {%- assign children = site.pages | where: "parent", page.title | sort: "nav_order" -%}
 <ul>
   {%- for child in children -%}
