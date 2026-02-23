@@ -5,28 +5,15 @@ has_children: true
 description: ""
 ---
 
-<style>
-  .child_nav { display: none !important; }
-</style>
-
-## Table of contents
-
-{%- assign children = site.pages | where: "parent", page.title | sort: "nav_order" -%}
-<ul>
-  {%- for child in children -%}
-    <li><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
-  {%- endfor -%}
-</ul>
-
----
-
 ### Man in the middle (MitM)
+
 > Bạn đang gửi một bức thư cho bạn của mình, nhưng trước khi bức thư đến tay bạn của bạn, một kẻ xấu đã mở thư, đọc nó, và có thể thay đổi nội dung trước khi gửi tiếp.
 > => Đó là cách MitM hoạt động.
 
 MitM là một kiểu tấn công mạng trong đó kẻ tấn công chèn mình vào giữa hai bên đang giao tiếp để đánh cắp hoặc thay đổi thông tin mà hai bên đang trao đổi.
 
 #### Cơ chế hoạt động
+
 1. Chèn vào giữa: kẻ tấn công chèn mình vào giữa hai bên đang giao tiếp (VD: bạn và một trang web).
 2. Chặn và đọc dữ liệu: kẻ tấn công chặn và đọc tất cả dữ liệu mà hai bên đang trao đổi.
 3. Thay đổi dữ liệu: kẻ tấn công có thể thay đổi dữ liệu trước khi gửi tiếp đến bên nhận.
