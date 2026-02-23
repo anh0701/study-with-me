@@ -8,7 +8,7 @@ permalink: /
 
 <!-- # Study with me -->
 
-#### Table of Contents
+<!-- #### Table of Contents
 
 1. [TCP](TCP.md)
 2. [SSL/TLS](SSLvsTLS.md)
@@ -37,4 +37,4 @@ permalink: /
 20. [Man in the middle](Man_in_the_middle.md)
     1. [Hijacking](Hijacking.md)
 21. [Embedded core](learning/embedded/embedded-core.md)
-22. [SQL](sql/basic.md)
+22. [SQL](sql/basic.md) -->
