@@ -1,3 +1,10 @@
+---
+layout: default
+title: 22. SQL
+nav_order: 2
+description: ""
+---
+
 # Tối ưu câu lệnh truy vấn
 
 1. Chỉ SELECT những cột cần thiết: thay vì SELECT * thì chỉ SELECT các cột cần thiết để giảm lượng data truyền về, giảm chi phí CPU/mạng.

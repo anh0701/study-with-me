@@ -1,3 +1,10 @@
+---
+layout: default
+title: 9. Caching
+nav_order: 2
+description: ""
+---
+
 ### Caching
 
 #### Server Side

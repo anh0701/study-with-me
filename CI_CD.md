@@ -1,3 +1,10 @@
+---
+layout: default
+title: 12. CI/CD
+nav_order: 2
+description: ""
+---
+
 ### CI/CD
 
 - CI/CD viết tắt của Continuous Integration (Tích hợp liên tục) và Continuous Delivery/Deployment (Triển khai liên tục).

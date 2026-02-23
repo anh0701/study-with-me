@@ -1,3 +1,10 @@
+---
+layout: default
+title: 13.3 SOA
+parent: Architectural Patterns
+description: ""
+---
+
 ### SOA
 
 SOA architectural patterns là những mẫu thiết kế cơ bản được sử dụng trong kiến trúc phần mềm theo kiểu dịch vụ (Service-Oriented Architecture - SOA).

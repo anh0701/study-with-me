@@ -1,3 +1,10 @@
+---
+layout: default
+title: 13.2 Microservices
+parent: Architectural Patterns
+description: ""
+---
+
 ### Microservices
 
 1. Monolith

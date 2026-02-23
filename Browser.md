@@ -1,3 +1,10 @@
+---
+layout: default
+title: 5. Browser
+nav_order: 2
+description: ""
+---
+
 ### Browser
 
 **Browser** (hay còn gọi là trình duyệt web) là một ứng dụng phần mềm cho phép bạn truy cập và tương tác với các trang web trên Internet. Các trình duyệt web phổ biến hiện nay bao gồm Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, và Opera

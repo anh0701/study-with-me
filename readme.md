@@ -1,3 +1,10 @@
+---
+layout: default
+title: Trang Chủ
+nav_order: 1
+description: ""
+---
+
 # Study with me
 
 #### Table of Contents

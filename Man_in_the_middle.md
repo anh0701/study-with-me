@@ -1,3 +1,10 @@
+---
+layout: default
+title: 20. Man in the middle (MitM)
+nav_order: 2
+description: ""
+---
+
 ### Man in the middle (MitM)
 > Bạn đang gửi một bức thư cho bạn của mình, nhưng trước khi bức thư đến tay bạn của bạn, một kẻ xấu đã mở thư, đọc nó, và có thể thay đổi nội dung trước khi gửi tiếp.
 > => Đó là cách MitM hoạt động.

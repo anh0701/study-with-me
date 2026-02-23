@@ -1,3 +1,10 @@
+---
+layout: default
+title: 13.1 Monolithic
+parent: Architectural Patterns
+description: ""
+---
+
 #### Đặc điểm của ứng dụng Monolithic:
 - Tất cả trong một khối: Tất cả các tính năng của ứng dụng đều được gói gọn trong một mã nguồn duy nhất.
 - Triển khai đồng nhất: Khi thay đổi hoặc nâng cấp bất kỳ tính năng nào, toàn bộ ứng dụng sẽ cần phải được triển khai lại.

@@ -1,3 +1,10 @@
+---
+layout: default
+title: 8. APIs
+nav_order: 2
+description: ""
+---
+
 ### APIs
 API (Application Programming Interface) 
 là một giao diện lập trình ứng dụng, cho phép các phần mềm hoặc dịch vụ giao tiếp và tương tác với nhau.API hoạt động như một cầu nối, giúp các ứng dụng có thể truy cập và sử dụng các chức năng hoặc dữ liệu từ một ứng dụng hoặc dịch vụ khác một cách dễ dàng.

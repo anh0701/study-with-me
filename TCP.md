@@ -1,3 +1,10 @@
+---
+layout: default
+title: 1. TCP
+nav_order: 2
+description: ""
+---
+
 ### TCP
 
 **TCP (Transmission Control Protocol)** là một giao thức truyền tải dữ liệu quan trọng trên Internet. Nó đảm bảo rằng dữ liệu được truyền tải một cách tin cậy và theo đúng thứ tự giữa các thiết bị mạng.
