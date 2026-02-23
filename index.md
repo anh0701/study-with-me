@@ -3,6 +3,7 @@ layout: default
 title: Trang Chủ
 nav_order: 1
 description: ""
+permalink: /
 ---
 
 # Study with me
