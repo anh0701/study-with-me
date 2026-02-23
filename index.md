@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Trang Chủ
+title: Home
 nav_order: 1
 description: ""
 permalink: /

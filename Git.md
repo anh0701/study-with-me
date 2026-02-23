@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 6. Git
-nav_order: 2
 description: ""
 ---
 

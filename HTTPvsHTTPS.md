@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 3. HTTP vs HTTPS
-nav_order: 2
 description: ""
 ---
 

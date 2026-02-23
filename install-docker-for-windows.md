@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 19. install docker for Windows Home
-nav_order: 2
 description: ""
 ---
 

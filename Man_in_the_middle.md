@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 20. Man in the middle (MitM)
-nav_order: 2
+has_children: true
 description: ""
 ---
 

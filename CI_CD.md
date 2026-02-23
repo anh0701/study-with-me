@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 12. CI/CD
-nav_order: 2
 description: ""
 ---
 

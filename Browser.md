@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 5. Browser
-nav_order: 2
 description: ""
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 4. Hosting, Domain, DNS
-nav_order: 2
 description: ""
 ---
 

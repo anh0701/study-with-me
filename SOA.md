@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 13.3 SOA
-parent: Architectural Patterns
+parent: 13. Architectural Patterns
 description: ""
 ---
 

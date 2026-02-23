@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 2. SSL/TLS
-nav_order: 2
 description: ""
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 13.1 Monolithic
-parent: Architectural Patterns
+parent: 13. Architectural Patterns
 description: ""
 ---
 

@@ -1,3 +1,9 @@
+---
+layout: default
+title: File Nháp
+parent: 20. Man in the middle (MitM)
+---
+
 ### Hijacking
 
 là một kiểu tấn công mạng trong đó kẻ tấn công lấy trộm hoặc chiếm hữu quyền kiểm soát một thiết bị, hệ thống hoặc thông tin mà không có sự cho phép của chủ sở hữu. Đây là một hình thức tấn công phổ biến và có thể gây nhiều hậu quả nghiêm trọng.

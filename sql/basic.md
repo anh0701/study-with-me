@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 22. SQL
-nav_order: 2
 description: ""
 ---
 
