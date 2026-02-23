@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 19. install docker for Windows Home
+title: 19.1 Windows Home
 description: ""
 ---
 
@@ -33,6 +33,7 @@ $ wsl --update
 ```
 
 - install podman to distro:
+
 ```shell
-$ sudo apt-get install -y podman
+   sudo apt-get install -y podman
 ```
