@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 6. Git
+title: 06. Git
 description: ""
 ---
 

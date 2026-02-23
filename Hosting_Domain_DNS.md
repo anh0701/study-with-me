@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 4. Hosting, Domain, DNS
+title: 04. Hosting, Domain, DNS
 description: ""
 ---
 

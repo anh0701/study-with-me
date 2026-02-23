@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 9. Caching
+title: 09. Caching
 description: ""
 ---
 

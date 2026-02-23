@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 3. HTTP vs HTTPS
+title: 03. HTTP vs HTTPS
 description: ""
 ---
 
