@@ -1,3 +1,7 @@
-theme: jekyll-theme-hacker
+# theme: jekyll-theme-hacker
+remote_theme: just-the-docs/just-the-docs
+
 title: Root@Study-With-Me:~$
 description: Log ghi chép quá trình tự học lập trình và các thuật toán.
+
+color_scheme: dark
