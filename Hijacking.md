@@ -26,33 +26,49 @@ là một kiểu tấn công mạng trong đó kẻ tấn công lấy trộm ho�
 - Phụ thuộc vào lỗ hổng bảo mật: MitM chỉ hoạt động hiệu quả khi có lỗ hổng bảo mật trong hệ thống.
 
 #### Cách khắc phục
+
 - Sử dụng HTTPS
 - Sử dụng VPN
 - Cảnh giác với wifi công cộng.
 
 #### Phân loại
+
 1. Session Hijacking:
+
 - kẻ tấn công đánh cắp session ID của người dùng để giả mạo danh tính và chiếm quyền truy cập vào hệ thống hoặc dịch vụ.
 - cách khắc phục: sử dụng HTTPS, session timeout, và thường xuyên làm mới session ID.
+
 2. Email Hijacking:
+
 - kẻ tấn công chiếm quyền kiểm soát tài khoản email của người dùng, có thể gửi email lừa đảo hoặc đánh cắp thông tin nhạy cảm.
 - cách khắc phục: sử dụng xác thực hai yếu tố (2FA) và mật khẩu mạnh.
+
 3. Browser Hijacking:
+
 - kẻ tấn công thay đổi cài đặt của trình duyệt (ví dụ: trang chủ, công cụ tìm kiếm) mà không có sự đồng ý của người dùng.
 - cách khắc phục: cài đặt phần mềm bảo mật và tránh cài đặt các plugin hoặc tiện ích mở rộng không rõ nguồn gốc.
+
 4. DNS Hijacking:
+
 - kẻ tấn công thay đổi bản ghi DNS để chuyển hướng lưu lượng mạng đến trang web giả mạo hoặc độc hại.
 - cách khắc phục: sử dụng DNSSEC (DNS Security Extensions) và các biện pháp bảo mật mạng.
+
 5. Wifi Hijacking:
+
 - kẻ tấn công sử dụng mạng wifi không bảo mật để đánh cắp thông tin hoặc thực hiện các cuộc tấn công man-in-the-middle.
 - cách khắc phục: sử dụng mạng wifi bảo mật với mật khẩu mạnh và WPA3
+
 6. IP Spoofing:
+
 - kẻ tấn công giả mạo địa chỉ IP để che giấu danh tính hoặc thực hiện các cuộc tấn công man-in-the-middle.
 - cách khắc phục: sử dụng các biện pháp bảo mật mạng và giám sát lưu lượng mạng để phát hiện hành vi đáng ngờ.
+
 #### So sánh MitM và Hijacking
 
 Sự tương đồng:
+
 - mục tiêu chung: cả hai đều nhằm chiếm đoạt thông tin hoặc quyền truy cập không được phép.
+
 - phương pháp tấn công: đều có thể sử dụng kĩ thuật tán công giống nhau như phising, exploitation, hoặc malware.
 
 Sự khác biệt:

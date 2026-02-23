@@ -8,15 +8,16 @@ description: ""
 ### Microservices
 
 1. Monolith
+
 - một ứng dụng lớn trong kiến trúc Monolith:
    
-    1. khó deploy (một thay đổi nhỏ cần phải deploy cả khối lớn),
-    
-    2. dẫn đến thời gian release kéo dài,
-    
-    3. khả năng mở rộng hạn chế (ứng dụng lớn nên mở rộng quy mô sẽ tốn nhiều tài nguyên, toàn bộ ứng dụng cần mở rộng ngay cả khi chỉ có 1 phần của nó cần nhiều dung lượng hơn)
-    
-    4. sự cố định về công nghệ, toàn bộ ứng dụng được xây dựng trên một nền tảng công nghệ duy nhất dẫn đến việc áp dụng công nghệ mới trở thành thách thức
+   1. khó deploy (một thay đổi nhỏ cần phải deploy cả khối lớn),
+   
+   2. dẫn đến thời gian release kéo dài,
+   
+   3. khả năng mở rộng hạn chế (ứng dụng lớn nên mở rộng quy mô sẽ tốn nhiều tài nguyên, toàn bộ ứng dụng cần mở rộng ngay cả khi chỉ có 1 phần của nó cần nhiều dung lượng hơn)
+   
+   4. sự cố định về công nghệ, toàn bộ ứng dụng được xây dựng trên một nền tảng công nghệ duy nhất dẫn đến việc áp dụng công nghệ mới trở thành thách thức
 ⇒ microservices
 
 2. Microservices
