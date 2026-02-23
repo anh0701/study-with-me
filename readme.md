@@ -1,6 +1,4 @@
-### About page
-
-<hr>
+# Study with me
 
 #### Table of Contents
 1. [TCP](TCP.md)
@@ -25,4 +23,7 @@
 17. [Search Engines](SearchEngines.md)
 18. [Web Servers](WebServers.md)
 19. [How to install docker/podman for Windows Home](install-docker-for-windows.md)
+20. [Man in the middle](Man_in_the_middle.md)
+21. [Embedded core](learning/embedded/embedded-core.md)
+22. [SQL](sql/basic.md)
 
