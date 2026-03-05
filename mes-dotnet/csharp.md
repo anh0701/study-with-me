@@ -10,7 +10,9 @@ permalink: /csharp/
 
 ## Cú pháp cơ bản
 
-- Kiểu dữ liệu: int (số nguyên), double/float (số thực), string (chuỗi), bool (true/false).
+### Kiểu dữ liệu
+
+- int (số nguyên), double/float (số thực), string (chuỗi), bool (true/false).
 
 ```csharp
 string tenMay = "May Cat Laser";
@@ -19,7 +21,7 @@ double nhietDoHienTai = 45.8;
 bool dangHoatDong = true;
 ```
 
-- câu lệnh điều kiện
+### câu lệnh điều kiện
 
 ```csharp
 // if else
@@ -67,7 +69,7 @@ switch(expression)
 
 ```
 
-- vòng lặp:
+### vòng lặp
 
 ```csharp
 // for thường dùng khi biết trước số lượng
@@ -86,7 +88,7 @@ while (i < 5)
 
 ```
 
-- Mảng (Array) và Danh sách (List)
+### Mảng (Array) và Danh sách (List)
 
 ```csharp
 using System.Collections.Generic;
@@ -98,8 +100,34 @@ danhSachLoi.Add("Het nguyen lieu");
 Console.WriteLine($"So luong loi hien tai: {danhSachLoi.Count}");
 ```
 
-
 ## OOP
+
+### Lớp (Class) và Đối tượng (Object)
+
+- Class (Lớp): Là cái khuôn, bản thiết kế (ví dụ: Bản vẽ kỹ thuật của xe hơi).
+- Object (Đối tượng): Là thực thể tạo ra từ khuôn đó (ví dụ: Chiếc Toyota màu đỏ của bạn, chiếc BMW màu xanh của hàng xóm).
+
+```csharp
+class Car 
+{
+    public string model; // Thuộc tính
+    public void Drive()  // Hành động (Phương thức)
+    {
+        Console.WriteLine("Xe đang chạy...");
+    }
+}
+
+Car myCar = new Car();
+myCar.model = "VinFast";
+myCar.Drive();
+```
+
+### 4 tính chất của OOP
+
+- Đóng gói (Encapsulation): Mục tiêu: Bảo mật và kiểm soát dữ liệu.
+- Kế thừa (Inheritance): Mục tiêu: Tái sử dụng code.
+- Đa hình (Polymorphism): Ví dụ: Cả "Chó" và "Mèo" đều có hành động Speak(), nhưng Chó thì "Gâu gâu", còn Mèo thì "Meo meo".
+- Trừu tượng (Abstraction): Mục tiêu: Giảm sự phức tạp, chỉ hiển thị những gì cần thiết.
 
 ## LINQ
 

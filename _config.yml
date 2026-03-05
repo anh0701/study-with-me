@@ -10,5 +10,9 @@ color_scheme: dark
 baseurl: "/study-with-me"
 url: "https://anh0701.github.io"
 
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
 back_to_top: true
 back_to_top_text: "Back to top"

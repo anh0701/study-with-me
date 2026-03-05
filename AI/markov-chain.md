@@ -37,13 +37,17 @@ $$
 
 ## Mô hình toán học
 
-- chuỗi Markov là một dãy biến ngẫu nhiên: 
+- chuỗi Markov là một dãy biến ngẫu nhiên:
 
-$$ X_0, X_1, X_2, ...$$
+$$
+X_0, X_1, X_2, ...
+$$
 
 thỏa mãn:
 
-$$P(X_{n+1} = x \mid X_n, X_{n-1}, \dots, X_0) = P(X_{n+1} = x \mid X_n)$$
+$$
+P(X_{n+1} = x \mid X_n, X_{n-1}, \dots, X_0) = P(X_{n+1} = x \mid X_n)
+$$
 
 Nghĩa là: Quá khứ không quan trọng - chỉ trạng thái hiện tại quyết định tương lai
 
@@ -73,9 +77,9 @@ Nghĩa là: Quá khứ không quan trọng - chỉ trạng thái hiện tại qu
     - autocomplete
 - Speech Recognition (Nhận dạng giọng nói dùng mô hình Hidden Markov Model): Siri, Google Speech, Alexa
 - Finace: dùng để mô hình biến động giá cổ phiếu, thị trường bull/bear
-- Robotics & AI: 
+- Robotics & AI:
     - Robot dùng Markov để định vị (localization), lập kế hoạch đường đi
     - Ví dụ: robot vacuum xác suất chuyển sang ô khác
-- Biology: ứng dụng trong phân tích DNA, gene prediction 
+- Biology: ứng dụng trong phân tích DNA, gene prediction
 - Gợi ý gõ từ của bàn phím
 
