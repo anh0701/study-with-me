@@ -42,4 +42,5 @@ permalink: /
     1. [C# core]({{ site.baseurl }}/csharp/)
     2. [.NET API & SQL]({{ site.baseurl }}/dotnet-api-sql/)
     3. [.NET Blazor]({{ site.baseurl }}/dotnet-blazor/)
-    
+24. [AI](AI.md)
+    1. [Chuỗi Markov]({{ site.baseurl }}/markov-chain/)
