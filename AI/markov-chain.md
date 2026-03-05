@@ -15,6 +15,7 @@ permalink: /markov-chain/
 - Giả sử hệ thống thời tiết với 3 trạng thái: Sunny, Cloudy, Rainy  
 
 Ví dụ:
+
 | Hôm nay | Ngày mai   |
 | ------- | ---------- |
 | Sunny   | 70% Sunny  |
@@ -23,6 +24,7 @@ Ví dụ:
 
 - Nếu hôm nay là Sunny, xác suất ngày mai chỉ phụ thuộc Sunny, không cần biết hôm kia là gì.
 - Từ đó ta có ma trận chuyển trạng thái như sau:
+
 $$
 P = \begin{bmatrix}
 0.7 & 0.2 & 0.1 \\
@@ -36,7 +38,9 @@ $$
 ## Mô hình toán học
 
 - chuỗi Markov là một dãy biến ngẫu nhiên: 
+
 $$ X_0, X_1, X_2, ...$$
+
 thỏa mãn:
 
 $$P(X_{n+1} = x \mid X_n, X_{n-1}, \dots, X_0) = P(X_{n+1} = x \mid X_n)$$
