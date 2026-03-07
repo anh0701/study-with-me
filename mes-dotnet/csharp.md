@@ -139,14 +139,14 @@ var ketQua = from s in danhSachSo
              select s;
 ```
 
-| Từ khóa | 	Công dụng	 | Ví dụ đời thực |
+| Từ khóa | Công dụng | Ví dụ đời thực |
 | --- | --- | --- |
-| Where	 | Lọc dữ liệu theo điều kiện	 | Lấy ra những học sinh có điểm > 8. |
-| OrderBy	 | Sắp xếp dữ liệu	 | Sắp xếp danh sách tên theo bảng chữ cái. |
-| Select	 | Chọn ra thông tin cụ thể	 | Chỉ lấy "Tên" của nhân viên |  bỏ qua ngày sinh |  địa chỉ. |
-| First/FirstOrDefault	 | Lấy phần tử đầu tiên	 | Tìm người đầu tiên trong hàng đợi. |
-| Count	 | Đếm số lượng	 | Đếm xem có bao nhiêu mặt hàng đã bán. |
-| Sum/Max/Min	 | Tính toán số học	 | Tính tổng hóa đơn hoặc tìm món rẻ nhất. |
+| Where | Lọc dữ liệu theo điều kiện | Lấy ra những học sinh có điểm > 8. |
+| OrderBy | Sắp xếp dữ liệu | Sắp xếp danh sách tên theo bảng chữ cái. |
+| Select | Chọn ra thông tin cụ thể | Chỉ lấy "Tên" của nhân viên, bỏ qua ngày sinh, địa chỉ. |
+| First/FirstOrDefault | Lấy phần tử đầu tiên | Tìm người đầu tiên trong hàng đợi. |
+| Count | Đếm số lượng | Đếm xem có bao nhiêu mặt hàng đã bán. |
+| Sum/Max/Min | Tính toán số học | Tính tổng hóa đơn hoặc tìm món rẻ nhất. |
 
 ```sh
 List<string> traiCay = new List<string> { "Tao", "Nho", "Le", "Chuoi" };
@@ -193,7 +193,7 @@ Ví dụ:
 
 ### 4.2. Ý tưởng của async
 
-- Thay vì `làm việc -> chờ -> làm tiếp` thì ta làm `làm việc -> nhờ hệ thống xử lý -> khi xong thì báo lại`. Giống như: bạn đặt đồ ăn, không đứng đợi bếp, khi xong họ gọi bạn.
+- Thay vì `làm việc -> chờ -> làm tiếp` thì ta làm `làm việc -> nhờ hệ thống xử lý -> khi xong thì báo lại`. Giống như: bạn đặt đồ ăn, không đứng đợi bếp, khi xong họ gọi bạn, trong thời gian đó bạn có thể làm việc khác.
 
 ### 4.3. async/await là gì?
 
