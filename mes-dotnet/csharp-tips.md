@@ -100,3 +100,141 @@ foreach (var url in urls)
 | `ValueTask`             | tối ưu allocation |
 | `IAsyncEnumerable`      | stream dữ liệu    |
 | `Parallel.ForEachAsync` | xử lý song song   |
+
+## Một số lỗi async
+
+### 1. Fire-and-forget async
+
+- Ví dụ:
+
+```sh
+    public async void SendEmail()
+    {
+        await smtp.SendAsync(...);
+    }
+```
+
+- hoặc:
+
+```sh
+    # không await
+    SendEmailAsync(); 
+```
+
+- Vấn đề:
+
+    - exception sẽ bị mất
+    - task có thể chết giữa chừng
+    - không ai biết
+
+- Ví dụ:
+
+```sh
+    public async Task SendEmailAsync()
+    {
+        throw new Exception("fail");
+    }
+
+    SendEmailAsync();
+    # Exception không được catch
+```
+
+- Cách đúng:
+
+```sh
+    await SendEmailAsync();
+    # hoặc lưu task:
+    var task = SendEmailAsync();
+```
+
+### 2. Tạo quá nhiều Task
+
+```sh
+    var tasks = new List<Task>();
+
+    foreach (var item in items)
+    {
+        tasks.Add(Process(item));
+    }
+
+    await Task.WhenAll(tasks);
+
+    # Nếu items = 1,000,000 thì sẽ tạo 1 triệu task, dẫn đến:
+    # Ram tăng, scheduler quá tải, performance giảm mạnh
+```
+
+- Cách đúng, giới hạn concurrency: `SemaphoreSlim / Parallel.ForEachAsync`
+- Ví dụ:
+
+```sh
+await Parallel.ForEachAsync(items, async (item, ct) =>
+{
+    await Process(item);
+});
+```
+
+### 3. Async method nhưng không async thật
+
+```sh
+public async Task<User> GetUser()
+{
+    return db.Users.First();
+}
+```
+
+- Vấn đề: method async nhưng code bên trong sync, thread vẫn bị block
+- Đúng:
+
+```sh
+public async Task<User> GetUser()
+{
+    return await db.Users.FirstAsync();
+}
+```
+
+### 4. Await trong loop (làm code chậm 10x)
+
+```sh
+foreach (var id in ids)
+{
+    await GetUser(id);
+}
+# 100 request, mỗi request 200ms, tổng 20s
+```
+
+```sh
+var tasks = ids.Select(id => GetUser(id));
+
+await Task.WhenAll(tasks);
+# thời gian khoảng 200ms
+```
+
+### 5. Blocking async code
+
+```sh
+Task.Delay(1000).Wait();
+Thread.Sleep(1000);
+# trong async code điều này block thread, phá lợi ích async
+```
+
+```sh
+public async Task Test()
+{
+    Thread.Sleep(2000);
+}
+# method async nhưng vẫn block
+```
+
+- Đúng `await Task.Delay(2000);`
+
+### Tóm tắt 5 lỗi nguy hiểm
+
+| Lỗi              | Hậu quả                     |
+| ---------------- | --------------------------- |
+| fire-and-forget  | mất exception               |
+| quá nhiều task   | memory + scheduler overload |
+| async giả        | thread bị block             |
+| await trong loop | code chậm                   |
+| blocking async   | mất lợi ích async           |
+
+## Phân biệt Task vs Thread vs async
