@@ -8,10 +8,10 @@ permalink: /dotnet-api-sql/
 
 # .NET API & SQL
 
-## ASP.NET Core Web API
+## 1. ASP.NET Core Web API
 
-## Entity Framework Core
+## 2. Entity Framework Core
 
-## SQL Server / PostgreSQL
+## 3. SQL Server / PostgreSQL
 
-## Kết nối phần cứng (IoT)
+## 4. Kết nối phần cứng (IoT)

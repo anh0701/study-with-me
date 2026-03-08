@@ -8,8 +8,8 @@ permalink: /dotnet-blazor/
 
 # .NET Blazor
 
-## Blazor Server vs WebAssembly
+## 1. Blazor Server vs WebAssembly
 
-## Razor Components
+## 2. Razor Components
 
-## Data Binding
+## 3. Data Binding
