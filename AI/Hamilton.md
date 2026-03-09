@@ -59,7 +59,7 @@ hamilton(v):
 
 - Dùng bitmask. Độ phức tạp: O(n^2 + 2^n), nhanh hơn brute force
 
-3. Heuristic / Apprõimation
+3. Heuristic / Approximation
 
 - Dùng khi đồ thị lớn: greedy, genetic algorithm, simulated annealing.
 
