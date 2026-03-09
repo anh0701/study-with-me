@@ -44,3 +44,4 @@ permalink: /
     3. [.NET Blazor]({{ site.baseurl }}/dotnet-blazor/)
 24. [AI](AI.md)
     1. [Chuỗi Markov]({{ site.baseurl }}/markov-chain/)
+    2. [Bài toán đồ thị Hamilton]({{ site.baseurl }}/hamilton/)
