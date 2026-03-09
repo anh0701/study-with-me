@@ -45,3 +45,6 @@ permalink: /
 24. [AI](AI.md)
     1. [Chuỗi Markov]({{ site.baseurl }}/markov-chain/)
     2. [Bài toán đồ thị Hamilton]({{ site.baseurl }}/hamilton/)
+    3. [Độ xoáy Curl]({{ site.baseurl }}/curl/)
+25. [System Design](system-design.md)
+    1. [Deploy không downtime]({{ site.baseurl }}/deploy-khong-downtime/)
