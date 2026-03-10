@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 24.1 Chuỗi Markov
-parent: 24. AI
+title: 23.1 Chuỗi Markov
+parent: 23. AI
 description: ""
 permalink: /markov-chain/
 ---

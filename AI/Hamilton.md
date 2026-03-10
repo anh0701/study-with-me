@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 24.2 Thuật toán đồ thị Hamilton
-parent: 24. AI
+title: 23.2 Thuật toán đồ thị Hamilton
+parent: 23. AI
 description: ""
 permalink: /hamilton/
 ---

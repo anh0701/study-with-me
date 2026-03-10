@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 23.2 .NET API & SQL
-parent: 23. MES
+title: 22.2 .NET API & SQL
+parent: 22. MES
 description: ""
 permalink: /dotnet-api-sql/
 ---

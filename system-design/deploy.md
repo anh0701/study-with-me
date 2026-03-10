@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 25.1 Deploy không downtime
-parent: 25. System Design
+title: 24.1 Deploy không downtime
+parent: 24. System Design
 description: ""
 permalink: /deploy-khong-downtime/
 ---

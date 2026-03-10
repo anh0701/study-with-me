@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 24. AI
+title: 23. AI
 has_children: true
 description: ""
 ---

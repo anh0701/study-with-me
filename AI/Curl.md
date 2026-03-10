@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 24.3 Độ xoáy Curl
-parent: 24. AI
+title: 23.3 Độ xoáy Curl
+parent: 23. AI
 description: ""
 permalink: /curl/
 ---

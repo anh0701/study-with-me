@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 23.1 C# core
-parent: 23. MES
+title: 22.1 C# core
+parent: 22. MES
 description: ""
 permalink: /csharp/
 ---
