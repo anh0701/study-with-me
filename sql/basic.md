@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 7.2 Tối ưu truy vấn
+title: 7.3 Tối ưu truy vấn
 parent: 07. Database
 description: ""
 ---
