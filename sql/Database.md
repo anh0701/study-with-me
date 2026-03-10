@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 07. Database
+title: 7.1 Database
+parent: 07. Database
 description: ""
 ---
 

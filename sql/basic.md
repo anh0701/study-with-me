@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 22. SQL
+title: 07.2 Tối ưu truy vấn
+parent: 07. Database
 description: ""
 ---
 
