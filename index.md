@@ -20,6 +20,7 @@ permalink: /
     1. [SQL basic](sql/SQL.md)
     2. [Database](sql/Database.md)
     3. [Tối ưu truy vấn](sql/basic.md)
+    4. [View vs Materialized View](sql/view-mv.md)
 8. [APIs](APIs.md)
 9. [Caching](Caching.md)
 10. [Web Security](WebSecurity.md)
