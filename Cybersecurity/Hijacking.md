@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 20.1 Hijacking
-parent: 20. Man in the middle (MitM)
+title: 20.2 Hijacking
+parent: 20. Cybersecurity
 ---
 
 ### Hijacking

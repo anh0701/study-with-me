@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 20. Man in the middle (MitM)
-has_children: true
+title: 20.1 Man in the middle (MitM)
+parent: 20. Cybersecurity
 description: ""
 ---
 
