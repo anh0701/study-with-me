@@ -53,3 +53,4 @@ permalink: /
     4. [Backtracking]({{ site.baseurl }}/backtracking/)
 24. [System Design](system-design.md)
     1. [Deploy không downtime]({{ site.baseurl }}/deploy-khong-downtime/)
+    2. [Thiết kế API](system-design/api-design.md)
