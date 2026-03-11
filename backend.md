@@ -104,6 +104,8 @@ description: ""
 - status code
 - JSON
 
+[API](APIs.md)
+
 ### 2. Authentication
 
 - session
@@ -117,12 +119,16 @@ description: ""
 - cache aside
 - TTL
 
+[Catching](Caching.md)
+
 ### 4. Message Queue
 
 - producer
 - consumer
 - queue
 - pub/sub
+
+[Message brokers](MessageBrokers.md)
 
 ## Database
 
@@ -181,6 +187,8 @@ description: ""
 - pipeline
 - build
 - deploy
+
+[see more ...](CI_CD.md)
 
 ## Kiến thức nâng cao
 
