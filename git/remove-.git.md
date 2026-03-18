@@ -1,6 +1,6 @@
 ---
 layout: default
-title: File Nháp
+title: remove git
 nav_exclude: true
 ---
 

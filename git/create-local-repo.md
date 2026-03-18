@@ -1,6 +1,6 @@
 ---
 layout: default
-title: File Nháp
+title: create folder/project in local before create repo in github
 nav_exclude: true
 ---
 
