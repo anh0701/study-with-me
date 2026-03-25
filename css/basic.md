@@ -32,22 +32,44 @@ description: ""
 
 ### 2.1 Color Properties
 
-- Thuộc tính chính để định màu cho văn bản là `color`, trong khi `background-color` được dùng để thiết lập màu nền. Có nhiều cách set màu.
-- **Tên màu**: Sử dụng các tên màu định sẵn như *red, blue, green, lightgray*
-- **Mã Hexadecimal**: Sử dụng mã 6 chữ số thập lục phân, ví dụ: `#FF0000 (đỏ)`, `#000000 (đen)`. Có thể dùng dạng viết tắt 3 chữ số cho các mã lặp lại (ví dụ: `#fff cho #ffffff`).
-- **Giá trị RGB/RGBA**: Sử dụng hàm `rgb(red, green, blue)` hoặc `rgba(red, green, blue, alpha)`. Kênh alpha (từ 0 đến 1) kiểm soát độ trong suốt.
-- **Giá trị HSL/HSLA**: Sử dụng hàm `hsl(hue, saturation, lightness)` hoặc `hsla(...)` để định nghĩa màu sắc
+- Thuộc tính chính để định màu cho văn bản là `color`, trong khi `background-color` được dùng để thiết lập màu nền.
+- Các cách thiết lập màu:
+
+    - **Tên màu**: Sử dụng các tên màu định sẵn như *red, blue, green, lightgray*
+    - **Mã Hexadecimal**: Sử dụng mã 6 chữ số thập lục phân, ví dụ: `#FF0000 (đỏ)`, `#000000 (đen)`. Có thể dùng dạng viết tắt 3 chữ số cho các mã lặp lại (ví dụ: `#fff cho #ffffff`).
+    - **Giá trị RGB/RGBA**: Sử dụng hàm `rgb(red, green, blue)` hoặc `rgba(red, green, blue, alpha)`. Kênh alpha (từ 0 đến 1) kiểm soát độ trong suốt.
+    - **Giá trị HSL/HSLA**: Sử dụng hàm `hsl(hue, saturation, lightness)` hoặc `hsla(...)` để định nghĩa màu sắc
 
 ### 2.2 Typography Properties
 
 - Typography trong CSS bao gồm các thuộc tính kiểm soát phông chữ, kích thước, trọng lượng và khoảng cách để đảm bảo văn bản dễ đọc và có tính thẩm mỹ.
-- **font-family**: Xác định phông chữ ưu tiên để sử dụng. Nên cung cấp một danh sách các phông chữ dự phòng, kết thúc bằng một họ phông chữ chung (ví dụ: `serif`, `sans-serif`) để trình duyệt có thể chọn font phù hợp nếu font đầu tiên không khả dụng. Bạn cũng có thể sử dụng `Google Fonts` để có thêm nhiều lựa chọn phông chữ.
-- **font-size**: Kiểm soát kích thước của văn bản, thường được xác định bằng `pixel (px)`, đơn vị tương đối `em` hoặc `rem`, hoặc các giá trị định sẵn (`small`, `large`).
-- **font-weight**: Đặt độ đậm hoặc mỏng của chữ (ví dụ: `normal`, `bold`, `bolder`, hoặc giá trị số từ `100` đến `900`).
-- **font-style**: Thường được dùng để xác định văn bản in nghiêng (`italic`, `oblique`) hoặc bình thường (`normal`).
-- **line-height**: Điều chỉnh khoảng cách dọc giữa các dòng văn bản (dãn dòng).
-- **letter-spacing**: Kiểm soát khoảng cách giữa các chữ cái.
-- **text-align**: Căn chỉnh văn bản theo chiều ngang (ví dụ: `left`, `right`, `center`, `justify`).
-- **text-decoration**: Thêm các đường kẻ vào văn bản (ví dụ: `underline`, `overline`, `line-through`, `none`).
+- Các thuộc tính ví dụ:
+
+    - **font-family**: Xác định phông chữ ưu tiên để sử dụng. Nên cung cấp một danh sách các phông chữ dự phòng, kết thúc bằng một họ phông chữ chung (ví dụ: `serif`, `sans-serif`) để trình duyệt có thể chọn font phù hợp nếu font đầu tiên không khả dụng. Bạn cũng có thể sử dụng `Google Fonts` để có thêm nhiều lựa chọn phông chữ.
+    - **font-size**: Kiểm soát kích thước của văn bản, thường được xác định bằng `pixel (px)`, đơn vị tương đối `em` hoặc `rem`, hoặc các giá trị định sẵn (`small`, `large`).
+    - **font-weight**: Đặt độ đậm hoặc mỏng của chữ (ví dụ: `normal`, `bold`, `bolder`, hoặc giá trị số từ `100` đến `900`).
+    - **font-style**: Thường được dùng để xác định văn bản in nghiêng (`italic`, `oblique`) hoặc bình thường (`normal`).
+    - **line-height**: Điều chỉnh khoảng cách dọc giữa các dòng văn bản (dãn dòng).
+    - **letter-spacing**: Kiểm soát khoảng cách giữa các chữ cái.
+    - **text-align**: Căn chỉnh văn bản theo chiều ngang (ví dụ: `left`, `right`, `center`, `justify`).
+    - **text-decoration**: Thêm các đường kẻ vào văn bản (ví dụ: `underline`, `overline`, `line-through`, `none`).
 
 ## 3. The Box Model
+
+- là khái niệm nền tảng quy định cách trình duyệt hiển thị và tính toán kích thước các phần tử HTML (dạng hộp chữ nhật). Nó bao gồm 4 thành phần chính từ trong ra ngoài: `Content` (Nội dung), `Padding` (Đệm), `Border` (Viền), và `Margin` (Lề), giúp kiểm soát bố cục và khoảng cách
+
+- Cấu trúc chi tiết của **CSS Box Model**:
+
+    - **Content** (Nội dung): Nơi hiển thị văn bản, hình ảnh, chiều rộng/cao được xác định bởi `width` và `height`.
+    - **Padding** (Đệm): Khoảng cách giữa nội dung và border. Nó nằm bên trong và thuộc về nền của phần tử
+    - **Border** (Viền): Đường viền bao quanh padding và content.
+    - **Margin** (Lề): Khoảng cách bên ngoài border, ngăn cách phần tử này với các phần tử khác.
+
+- Cách tính kích thước phần tử:
+
+    - Theo mặc định (box-sizing: content-box), `tổng chiều rộng của một phần tử = margin-left + border-left + padding-left + width + padding-right + border-right + margin-right`.
+
+- Thuộc tính quan trọng: **box-sizing**:
+
+    - **content-box** (Mặc định): Width/Height chỉ áp dụng cho nội dung. Padding/Border cộng thêm vào kích thước tổng.
+    - **border-box**: Width/Height áp dụng cho toàn bộ phần tử (bao gồm cả padding và border), giúp dễ dàng kiểm soát kích thước layout.
