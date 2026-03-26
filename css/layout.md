@@ -23,7 +23,7 @@ description: ""
 | Width/Height | Không áp dụng được | Áp dụng được | Áp dụng được |
 | Margin/Padding | Chỉ hỗ trợ trái/phải | Hỗ trợ tất cả | Hỗ trợ tất cả |
 
-### 1.1 inline
+### 1.1. inline
 
 - **Không ngắt dòng**: Các phần tử đứng liền kề nhau trên cùng một dòng ngang.
 - **Chiều rộng/chiều cao**: width và height không có tác dụng.
@@ -31,14 +31,14 @@ description: ""
 - **Nội dung**: Chỉ bao bọc vừa khít nội dung bên trong (text, ảnh).
 - Các phần tử mặc định là inline: `<span>, <a>, <strong>, <em>, <img>, <label>`
 
-### 1.2 block
+### 1.2. block
 
 - **Ngắt dòng**: Luôn bắt đầu trên một hàng mới và đẩy phần tử tiếp theo xuống hàng.
 - **Chiều rộng**: Mặc định chiếm toàn bộ chiều rộng của khung nhìn (width: 100%).
 - **Kích thước**: Cho phép thiết lập các thuộc tính width, height, margin, và padding đầy đủ.
 - Ví dụ phổ biến: Các thẻ `<header>, <footer>, <p>, <h1> - <h6>, <ul>, <div>` đều mặc định là block
 
-### 1.3 inline-block
+### 1.3. inline-block
 
 - **Hiển thị**: Các phần tử nằm trên một hàng, không xuống dòng tự động sau mỗi phần tử.
 - **Kích thước**: Có thể thiết lập chiều rộng (width) và chiều cao (height).
@@ -52,13 +52,34 @@ description: ""
 
 > Một nhược điểm nhỏ là `inline-block` thường tạo ra khoảng trắng (white-space) giữa các phần tử do xuống dòng trong mã HTML, cần xử lý bằng CSS (font-size: 0 ở phần tử cha) hoặc loại bỏ khoảng trắng trong mã nguồn.
 
-### 1.4 None
+### 1.4. None
 
 - có nhiệm vụ làm cho một phần tử ẩn đi. Khi sử dụng thuộc tính này với giá trị none, nó sẽ làm cho phần tử không còn chiếm không gian hiển thị, giống như nó chưa hề có mặt tại vị trí đó
 
 ## 2. Flexbox
 
 - Tối ưu cho bố cục 1 chiều (hàng hoặc cột), giúp căn chỉnh, phân chia không gian giữa các phần tử cực tốt.
+- Đặc điểm:
+    
+    - **Tính linh hoạt**: các thành phần con (flex items) có thể tự co giãn (tăng/giảm kích thước) để lấp đầy không gian trống hoặc thu nhỏ lại để tránh tràn màn hình.
+    - **Sắp xếp một chiều (1D)**: hoạt động chủ yếu trên một trục: Trục chính (main axis) và trục phụ (cross axis)
+    - **Dễ dàng căn chỉnh**: căn giữa theo cả hai chiều ngang và dọc dễ dàng bằng `justify-content` và a`lign-items`
+    - **Thay đổi thứ tự**: có thể thay đổi thứ tự hiển thị của các phần tử mà không cần can thiệp vào mã HTML
+
+- Các thành phần cơ bản:
+
+    - **Flex container (khối cha)**: được thiết lập `display:flex;` hoặc `display: inline-flex;`
+    - **Flex items (các phần tử con)**: các thành phần nằm ngay trong container
+
+- Tại sao nên dùng flexbox:
+
+    - **Thay thế float/position**: khắc phục nhược điểm của cách dàn trang truyền thống, giảm thiểu các thủ thuật phức tạp
+    - **Responsive tốt**: dễ dàng điều chỉnh bố cục trên các kích thước màn hình khác nhau (điện thoại, máy tính bảng)
+
+- Các thuộc tính phổ biến:
+
+    - cho container: `display, flex-direction, justify-content, align-items, flex-wrap`
+    - cho items: `flex-grow, flex-shrink, flex-basis, order`
 
 ## 3. CSS Grid
 
