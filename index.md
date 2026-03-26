@@ -6,9 +6,9 @@ description: ""
 permalink: /
 ---
 
-<!-- # Study with me -->
+# Study with me
 
-#### Table of Contents
+## Mục lục
 
 1. [TCP](TCP.md)
 2. [SSL/TLS](SSLvsTLS.md)
@@ -63,3 +63,6 @@ permalink: /
     3. [Responsive Design](css/Responsive-Design.md)
     4. [Interactions & Animations](css/Interactions-Animations.md)
     5. [Master Level](css/Master-Level.md)
+28. [Linux](linux.md)
+    1. [Linux Disk Management](linux/Linux-Disk-Management.md)
+    2. [Linux Shell](linux/Linux-Shell.md)
