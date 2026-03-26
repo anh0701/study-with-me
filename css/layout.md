@@ -84,6 +84,24 @@ description: ""
 ## 3. CSS Grid
 
 - Mạnh mẽ cho bố cục 2 chiều (cả hàng và cột), cho phép chia website thành các ô lưới cố định.
+- Các đặc điểm:
+
+    - **Bố cục hai chiều**: xử lý đồng thời hàng (row) và cột (column)
+    - **grid container & items**: gồm một phần tử cha (container) và các phần tử con (items) được sắp xếp bên trong.
+    - **sắp xếp linh hoạt**: dễ dàng căn chỉnh, thay đổi vị trí các phần tử mà không cần sửa HTML
+    - **Responsive**: hỗ trợ tạo giao diện tương thích tốt trên các thiết bị khác nhau.
+
+- Thuộc tính cơ bản:
+
+    - `display: grid;`: khởi tạo grid container
+    - `grid-template-columns`: định nghĩa số lượng và kích thước cột
+    - `grid-template-rows`: định nghĩa số lượng và kích thước hàng
+    - `gap` (hoặc `grid-gap`): khoảng cách giữa các ô
+
+- So sánh nhanh:
+
+    - **grid (2D)**: dùng cho bố cục tổng thể trang (layout-first)
+    - **flexbox (1D)**: dùng cho bố cục thành phần nhỏ, hàng hoặc cột đơn lẻ (content-first)
 
 ## 4. Positioning
 
