@@ -35,23 +35,23 @@ permalink: /yolov8/
 
 1. Anchor-free
 
-- YOLOv5 phải định nghĩa anchor box
-- YOLOv8 không cần anchor, dự đoán trực tiếp
-- YOLOv8 ưu điểm: dễ train hơn, ít hyperparameter hơn
+    - YOLOv5 phải định nghĩa anchor box
+    - YOLOv8 không cần anchor, dự đoán trực tiếp
+    - YOLOv8 ưu điểm: dễ train hơn, ít hyperparameter hơn
 
 2. Decoupled head
 
-- YOLOv8 tách: classification, regression (bbox)
-- giúp: học ổn định hơn, chính xác hơn
+    - YOLOv8 tách: classification, regression (bbox)
+    - giúp: học ổn định hơn, chính xác hơn
 
 3. Loss function cải tiến
 
-- YOLOv8 dùng: CloD/DFL (Distribution Focal Loss)
-- giúp: bbox chính xác hơn, giảm lệch vị trí
+    - YOLOv8 dùng: CloD/DFL (Distribution Focal Loss)
+    - giúp: bbox chính xác hơn, giảm lệch vị trí
 
 4. Task đa dạng
 
-- YOLOv8 không chỉ detect: detection, segmentation, classification, pose (keypoint)
+    - YOLOv8 không chỉ detect: detection, segmentation, classification, pose (keypoint)
 
 ## 4. Cách model hiểu object
 
