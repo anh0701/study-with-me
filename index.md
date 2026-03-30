@@ -51,6 +51,7 @@ permalink: /
     2. [Bài toán đồ thị Hamilton]({{ site.baseurl }}/hamilton/)
     3. [Độ xoáy Curl]({{ site.baseurl }}/curl/)
     4. [Backtracking]({{ site.baseurl }}/backtracking/)
+    5. [YOLOv8]({{ site.baseurl }}/yolov8/)
 24. [System Design](system-design.md)
     1. [Deploy không downtime]({{ site.baseurl }}/deploy-khong-downtime/)
     2. [Thiết kế API](system-design/api-design.md)
