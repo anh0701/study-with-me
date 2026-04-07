@@ -67,3 +67,6 @@ permalink: /
 28. [Linux](linux.md)
     1. [Linux Disk Management](linux/Linux-Disk-Management.md)
     2. [Linux Shell](linux/Linux-Shell.md)
+29. [UI/UX](ui-ux.md)
+    1. [Figma basic](UI-UX/Figma/basic.md)
+    2. [Color mixing principles](UI-UX/color-mixing.md)
