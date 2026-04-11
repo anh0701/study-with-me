@@ -91,3 +91,11 @@ description: ""
 ![shadow](images/shadow.png)
 
 - Đổ bóng: `Effect`
+
+![arc](images/arc.png)
+
+- Nút chấm đó để vẽ hình tròn khuyết
+
+![char c](images/char-c.png)
+
+- Cách tạo ra chữ C, nếu như chèn ảnh vào chữ C kia sẽ tạo hiệu ứng khá thú vị
