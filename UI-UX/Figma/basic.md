@@ -64,17 +64,15 @@ description: ""
 ![hoatron](images/hoatron.png)
 
 - Muốn hòa trộn màu thì chọn màu cần hòa trộn ở `Fill`
-- chọn hình Giọt nước ở Appearance -> Overlay/...
+- chọn hình `Giọt nước` ở `Appearance` -> `Overlay/...`
 
 #### 4.5 Cắt giao diện
 
 ![slide](images/slide.png)
 
-- Chức năng này giúp cắt giao diện thành các ảnh khi Export
+- Chức năng này giúp cắt giao diện thành các ảnh khi `Export`
 
 ### 5. Shape
-
-#### 5.1 Rect
 
 ![shapes](images/shapes.png)
 
@@ -83,3 +81,13 @@ description: ""
 ![image-shape](images/shape-image.png)
 
 - Chọn hình elip/hình chữ nhật/hình tam giác/... -> sau đó thêm ảnh
+
+- Đổ màu vào ảnh: chọn shape -> thêm ảnh vào shape -> vẽ shape khác trên ảnh -> chọn `Fill` (màu để đổ vào ảnh) -> chọn các chế độ `overlay/multiply/...` (trong `Giọt nước` ở `Appearance`)
+
+![stroke](images/stroke.png)
+
+- Viền khung: `stroke`
+
+![shadow](images/shadow.png)
+
+- Đổ bóng: `Effect`
