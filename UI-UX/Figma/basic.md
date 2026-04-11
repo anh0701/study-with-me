@@ -37,7 +37,9 @@ description: ""
 
 ![frame](images/frame.png)
 
-- Ấn `phím F` để mở
+![open](images/open-frame.png)
+
+- Ấn `phím F` để mở, hoặc thanh menu bên dưới website
 
 ### 4. Chỉnh thuộc tính
 
@@ -69,3 +71,15 @@ description: ""
 ![slide](images/slide.png)
 
 - Chức năng này giúp cắt giao diện thành các ảnh khi Export
+
+### 5. Shape
+
+#### 5.1 Rect
+
+![shapes](images/shapes.png)
+
+- `Image/video...(Ctrl + Shift + K)`: dùng để thêm ảnh/video
+
+![image-shape](images/shape-image.png)
+
+- Chọn hình elip/hình chữ nhật/hình tam giác/... -> sau đó thêm ảnh
