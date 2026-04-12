@@ -13,6 +13,7 @@ description: ""
 
 - Zoom in: Ctrl + hoặc Ctrl + Scroll
 - Zoom out: Ctrl -
+- Zoom một shape/frame/chi tiết nào đó: ấn giữ phím Z và chọn vào vật thể muốn zoom
 
 ### 2. Move / Scale / Hand Tool
 
@@ -99,3 +100,11 @@ description: ""
 ![char c](images/char-c.png)
 
 - Cách tạo ra chữ C, nếu như chèn ảnh vào chữ C kia sẽ tạo hiệu ứng khá thú vị
+
+![text style](images/text-style.png)
+
+- Cách chỉnh text thành heading/body/...
+
+### 6. Component
+
+- Nên dùng khi: phần tử cần tái sử dụng nhiều lần (button, input field, icons, header/footer, card), thiết kế hệ thống đồng bộ (giúp thay đổi một lần ở Main Component toàn bộ instance trên các màn hình khác nhau sẽ tự cập nhật theo), làm việc nhóm (dễ dàng chia sẻ thư viên component/library cho các designer khác), prototype (cần tạo các tương tác phức tạp như: hover, click chuyển trạng thái)
