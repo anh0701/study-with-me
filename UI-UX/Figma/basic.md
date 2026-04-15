@@ -107,4 +107,26 @@ description: ""
 
 ### 6. Component
 
+![component](images/component.png)
+
 - Nên dùng khi: phần tử cần tái sử dụng nhiều lần (button, input field, icons, header/footer, card), thiết kế hệ thống đồng bộ (giúp thay đổi một lần ở Main Component toàn bộ instance trên các màn hình khác nhau sẽ tự cập nhật theo), làm việc nhóm (dễ dàng chia sẻ thư viên component/library cho các designer khác), prototype (cần tạo các tương tác phức tạp như: hover, click chuyển trạng thái)
+
+- Chỉnh sửa ở con thì cha không thay đổi, chỉnh sửa ở cha thì tất cả con sẽ thay đổi. Nếu con thay đổi rồi, quay lại đổi cha thì con mới sửa không thay đổi theo cha nữa.
+
+![detach instance](images/detach-instance.png)
+
+- Để hủy component thì chọn component, chuột phải chọn detach instance. Lưu ý chỉ dùng được với component con
+
+- Nếu dùng `auto layout` với component thì nó chỉnh sửa cho tất cả các component
+
+![go to main component](images/go-to-main-component.png)
+
+- Khi có quá nhiều component, cách để tìm component cha: chọn component -> chọn go to main component.
+
+![color style](images/color-style-new.png)
+
+- Muốn tạo màu dễ dàng, thì đặt tên màu để dễ chọn
+
+![create text style](images/text-style-new.png)
+
+- Muốn tạo style text áp dụng nhiều chỗ, dễ dùng lại thì tạo text style
