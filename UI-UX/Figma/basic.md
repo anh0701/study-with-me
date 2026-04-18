@@ -130,3 +130,9 @@ description: ""
 ![create text style](images/text-style-new.png)
 
 - Muốn tạo style text áp dụng nhiều chỗ, dễ dùng lại thì tạo text style
+
+### 7. Constraint
+
+- Giúp vị trí không thay đổi dù resize shape (căn lề ấy)
+
+![constraint](images/constraint.png)
