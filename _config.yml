@@ -14,7 +14,7 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
 
-logo: "/assets/images/logo.png"
+logo: /assets/images/logo.png
 
 back_to_top: true
 # back_to_top_text: "Back to top"
