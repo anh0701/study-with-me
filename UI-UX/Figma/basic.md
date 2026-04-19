@@ -123,13 +123,21 @@ description: ""
 
 - Khi có quá nhiều component, cách để tìm component cha: chọn component -> chọn go to main component.
 
+- Muốn tạo màu dễ dàng, thì đặt tên màu để dễ chọn
+
 ![color style](images/color-style-new.png)
 
-- Muốn tạo màu dễ dàng, thì đặt tên màu để dễ chọn
+- Tạo color style với màu mới
+
+![color tu mau cu](images/tao-color-style-with-mau-cu.png)
+
+- Tạo color style với màu cũ đã có
+
+- Muốn tạo style text áp dụng nhiều chỗ, dễ dùng lại thì tạo text style
 
 ![create text style](images/text-style-new.png)
 
-- Muốn tạo style text áp dụng nhiều chỗ, dễ dùng lại thì tạo text style
+- Tạo text style mới
 
 ### 7. Constraint
 
