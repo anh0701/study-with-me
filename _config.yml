@@ -18,10 +18,3 @@ logo: /assets/images/logo.png
 
 back_to_top: true
 # back_to_top_text: "Back to top"
-
-# custom css
-aux_links:
-  "study-with-me": "/"
-
-scss:
-  theme_file: "/assets/css/custom.scss"
