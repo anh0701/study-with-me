@@ -34,7 +34,7 @@ GitLab cung cấp các công cụ như theo dõi vấn đề, quản lý nhóm, 
 
 #### Quy trình làm việc với Git
 
-![img.png](git/images/img_git_workflow.png)
+![img git workflow](../../assets/images/img_git_workflow.png)
 
 1. Sử dụng nhánh (branch):
 

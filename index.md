@@ -8,7 +8,7 @@ permalink: /
 
 # Study with me
 
-## Mục lục
+<!-- ## Mục lục
 
 1. [TCP](TCP.md)
 2. [SSL/TLS](SSLvsTLS.md)
@@ -69,4 +69,4 @@ permalink: /
     2. [Linux Shell](linux/Linux-Shell.md)
 29. [UI/UX](ui-ux.md)
     1. [Figma basic](UI-UX/Figma/basic.md)
-    2. [Color mixing principles](UI-UX/color-mixing.md)
+    2. [Color mixing principles](UI-UX/color-mixing.md) -->

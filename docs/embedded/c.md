@@ -8,7 +8,7 @@ nav_exclude: true
 
 ## Pointer
 
-![pointer](image/pointer.png)
+![pointer](../../assets/images/pointer.png)
 
 > Vì sao C cần **pointer**?  
 > Pointer tồn tại vì C muốn cho lập trình viên kiểm soát bộ nhớ một cách trực tiếp và hiệu quả.

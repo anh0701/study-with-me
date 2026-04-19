@@ -43,11 +43,11 @@ permalink: /microservices/
 
       1. Centralized configuration: quản lý các cấu hình của các microservices trong GIT  repository
       
-      ![img.png](images/img.png)
+      ![img](../../assets/images/img.png)
 
       2. Load balancing (cân bằng tải): giúp phân phối các request một cách linh hoạt
       
-      ![img_1.png](images/img_1.png)
+      ![alt text](../../assets/images/img_1.png)
 
       3. Service discovery: tự động phát hiện các microservices
          
