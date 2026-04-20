@@ -17,20 +17,31 @@
   z-index: 1000;
 }
 
-.main-wrapper {
-  display: flex;
-  gap: 2rem;
-}
-
 .main-content {
-  flex: 1;
+  position: relative;
+  padding-right: 300px; 
 }
 
 .my-right-toc {
-  width: 260px;
-  position: sticky;
-  top: 4rem;
-  height: fit-content;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+
+  // background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+
+  // box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  // border-left: 3px solid #4353FA;
+
+  font-size: 0.85rem;
+  z-index: 100;
+
+  scrollbar-width: thin;
 }
 
 @media (max-width: 900px) {
