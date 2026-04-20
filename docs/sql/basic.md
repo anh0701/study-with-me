@@ -5,6 +5,11 @@ parent: 07. Database
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # Tối ưu câu lệnh truy vấn
 
 1. Chỉ SELECT những cột cần thiết: thay vì SELECT * thì chỉ SELECT các cột cần thiết để giảm lượng data truyền về, giảm chi phí CPU/mạng.

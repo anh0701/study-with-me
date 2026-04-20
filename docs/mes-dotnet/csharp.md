@@ -6,6 +6,11 @@ description: ""
 permalink: /csharp/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # C# Core
 
 ## 1. Cú pháp cơ bản

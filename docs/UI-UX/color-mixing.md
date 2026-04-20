@@ -5,6 +5,11 @@ parent: 29. UI/UX
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ## 1. Color Theory
 
 1. Có 3 màu gốc là: đỏ, vàng, xanh dương

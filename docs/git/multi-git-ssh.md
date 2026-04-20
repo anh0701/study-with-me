@@ -4,6 +4,11 @@ title: gen multi ssh
 nav_exclude: true
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 1. gen key:
 
 ```sh

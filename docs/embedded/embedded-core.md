@@ -4,6 +4,11 @@ title: 21. Embedded core
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # Embedded core
 
 ## Vi điều khiển (MCU)

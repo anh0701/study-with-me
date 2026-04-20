@@ -4,6 +4,11 @@ title: gen ssh in windows
 nav_exclude: true
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 - B1:
 
     ```sh

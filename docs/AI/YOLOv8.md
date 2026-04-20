@@ -6,6 +6,11 @@ description: ""
 permalink: /yolov8/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ## 1. Khái niệm
 
 - YOLOv8 = You Only Look Once -> Ý tưởng: dự đoán object trực tiếp từ ảnh trong 1 lần forward pass

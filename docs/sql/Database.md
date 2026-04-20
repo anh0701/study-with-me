@@ -5,6 +5,11 @@ parent: 07. Database
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # Database
 
 ## 1. Relational Databases

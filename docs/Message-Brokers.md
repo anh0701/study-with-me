@@ -4,6 +4,11 @@ title: 16. Message Brokers
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # Message Brokers
 
 ## Routing message

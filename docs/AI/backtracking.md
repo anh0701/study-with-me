@@ -6,6 +6,11 @@ description: ""
 permalink: /backtracking/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # Backtracking
 
 ## Bài toán N-Queens

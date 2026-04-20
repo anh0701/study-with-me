@@ -6,6 +6,11 @@ description: ""
 permalink: /soa/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ### SOA
 
 SOA architectural patterns là những mẫu thiết kế cơ bản được sử dụng trong kiến trúc phần mềm theo kiểu dịch vụ (Service-Oriented Architecture - SOA).

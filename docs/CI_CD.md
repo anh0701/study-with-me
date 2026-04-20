@@ -4,6 +4,11 @@ title: 12. CI/CD
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ### CI/CD
 
 - CI/CD viết tắt của Continuous Integration (Tích hợp liên tục) và Continuous Delivery/Deployment (Triển khai liên tục).

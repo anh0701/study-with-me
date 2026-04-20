@@ -6,6 +6,11 @@ description: ""
 permalink: /deploy-khong-downtime/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # Deploy không downtime
 
 > Làm sao deploy code mà hệ thống không downtime một giây?

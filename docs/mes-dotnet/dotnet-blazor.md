@@ -6,6 +6,11 @@ description: ""
 permalink: /dotnet-blazor/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # .NET Blazor
 
 ## 1. Blazor Server vs WebAssembly

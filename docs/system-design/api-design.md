@@ -6,6 +6,11 @@ description: ""
 permalink: /api-design/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # Thiết kế API
 
 - Đặc tính của API tốt: rõ ràng, nhất quán, dễ hiểu, tách biệt tài nguyên.

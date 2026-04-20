@@ -4,6 +4,11 @@ title: transfer repositories from GitLab to GitHub
 nav_exclude: true
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # problem
 
 - transfer repositories from GitLab to GitHub

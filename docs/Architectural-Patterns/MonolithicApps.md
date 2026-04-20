@@ -6,6 +6,11 @@ description: ""
 permalink: /monolithic-apps/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 #### Đặc điểm của ứng dụng Monolithic: 
 
 - Tất cả trong một khối: Tất cả các tính năng của ứng dụng đều được gói gọn trong một mã nguồn duy nhất.

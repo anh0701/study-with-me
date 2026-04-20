@@ -5,6 +5,11 @@ parent: 07. Database
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # View vs Materialized View
 
 > Một query JOIN 5 bảng chạy 3 giây -> giảm còn 30ms mà không cần sửa code backend?

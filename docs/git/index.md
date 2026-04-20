@@ -4,6 +4,11 @@ title: 06. Git
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ### GIT
 
 - Git là một hệ thống quản lý phiên bản phân tán (Distributed Version Control System - DVCS) mã nguồn mở và miễn phí. Nó được thiết kế để xử lý mọi thứ từ các dự án nhỏ đến rất lớn một cách nhanh chóng và hiệu quả.

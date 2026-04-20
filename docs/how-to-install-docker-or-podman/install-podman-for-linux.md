@@ -6,6 +6,11 @@ description: ""
 permalink: /install-podman-for-linux/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ## install podman for Linux
 
 - install podman/podman-compose, run command:

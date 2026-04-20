@@ -4,6 +4,11 @@ title: 26. Logging
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ## 5 loại logging quan trọng trong hệ thống backend
 
 ### 1. Request / Response Log

@@ -5,6 +5,11 @@ parent: 27. CSS
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # Layout
 
 > là kỹ thuật sắp xếp các phần tử HTML thành bộ khung trang web (header, content, footer) bằng các thuộc tính CSS. Các công cụ chính bao gồm Flexbox (bố cục 1 chiều), Grid (bố cục 2 chiều), Position (định vị) và Float. Kiến thức này giúp website hiển thị chuẩn xác, Responsive trên mọi thiết bị.

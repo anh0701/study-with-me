@@ -6,6 +6,11 @@ description: ""
 permalink: /microservices/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ### Microservices
 
 1. Monolith

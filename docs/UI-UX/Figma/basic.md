@@ -5,6 +5,11 @@ parent: 29. UI/UX
 description: ""
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ## 1. Figma Shortcuts & Basic Actions
 
 ### 1. Zoom

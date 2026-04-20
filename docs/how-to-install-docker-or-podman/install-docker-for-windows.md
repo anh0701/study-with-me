@@ -6,6 +6,11 @@ description: ""
 permalink: /install-docker-for-windows/
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ## install docker for Windows Home
 
 - enable features (using powershell):

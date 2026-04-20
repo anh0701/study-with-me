@@ -4,6 +4,11 @@ title: remove git
 nav_exclude: true
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 # problem
 
 - no push code: maybe child directory have folder .git => move it

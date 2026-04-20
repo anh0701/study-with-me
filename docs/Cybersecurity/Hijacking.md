@@ -4,6 +4,11 @@ title: 20.2 Hijacking
 parent: 20. Cybersecurity
 ---
 
+<div class="my-right-toc" markdown="1">
+1. TOC
+{:toc}
+</div>
+
 ### Hijacking
 
 là một kiểu tấn công mạng trong đó kẻ tấn công lấy trộm hoặc chiếm hữu quyền kiểm soát một thiết bị, hệ thống hoặc thông tin mà không có sự cho phép của chủ sở hữu. Đây là một hình thức tấn công phổ biến và có thể gây nhiều hậu quả nghiêm trọng.
