@@ -33,7 +33,7 @@ layout: table_wrappers
                         {% else %}
                         {{ content }}
                         {% endif %}
-                        {% if page.is_parent %}
+                        {% if page.has_children %}
                         {% include components/children_nav.html %}
                         {% endif %}
                     </main>
