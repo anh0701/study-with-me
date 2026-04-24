@@ -39,7 +39,7 @@ layout: table_wrappers
                     </main>
                     {% include components/footer.html %}
                 </div>
-                {% if page.has_toc != false %}
+                {% if page.has_toc == false %}
                 <aside class="right-toc">
                     {% include components/children_nav.html %}
                 </aside>
