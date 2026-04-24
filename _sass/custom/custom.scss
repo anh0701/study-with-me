@@ -1,5 +1,5 @@
 .site-logo {
-  border-radius: 12px; 
+  border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: auto;
@@ -7,8 +7,12 @@
 }
 
 .site-logo:hover {
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.side-bar {
+  width: calc((100% - 90rem) / 2 + 16.5rem);
 }
 
 .main-header {
@@ -19,7 +23,6 @@
 
 .main-content {
   position: relative;
-  padding-right: 300px; 
 }
 
 .my-right-toc {
@@ -48,7 +51,14 @@
   .my-right-toc {
     display: none;
   }
+
   .main-content {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 66.5rem) {
+  .side-bar + .main {
+    margin-left: Max(16.5rem, calc((100% - 90rem) / 2 + 16.5rem));
   }
 }
