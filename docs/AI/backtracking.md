@@ -4,12 +4,8 @@ title: 23.4 Backtracking
 parent: 23. AI
 description: ""
 permalink: /backtracking/
+has_toc: true
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # Backtracking
 
