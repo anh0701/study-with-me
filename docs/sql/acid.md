@@ -14,6 +14,39 @@ description: ""
 
 ## Tính chất
 
+### Atomicity (Tính nguyên tử) – "Tất cả hoặc không có gì"
+
+- Trong hóa học, một nguyên tử là đơn vị nhỏ nhất không thể chia tách. Trong database, một Transaction cũng vậy.
+- VD: bạn chuyển 1 triệu cho bạn thân, có 2 bước: (1) trừ 1 triệu ở tài khoản bạn, (2) cộng 1 triệu vào tài khoản của bạn thân
+- Nếu tính Atomicity được đảm bảo: hoặc là cả hai bước đều thành công, hoặc là không có bước nào xảy ra cả. Không bao giờ có chuyện tiền đã trừ ở máy bạn mà bên kia chưa nhận được. Nếu bước (2) lỗi, hệ thống sẽ Rollback lại trạng thái ban đầu
+
+### Consistency (Tính nhất quán) – "Đúng quy tắc"
+
+- Dữ liệu trước và sau khi giao dịch phải luôn tuân thủ các quy tắc (constraints) đã đặt ra
+- VD: Ngân hàng có quy tắc "Số dư tài khoản không được âm"
+- Nếu Consistency được đảm bảo: nếu bạn chỉ còn 500k mà cố chuyển 1 triệu, hệ thống sẽ báo lỗi và ngăn giao dịch đó lại để bảo vệ quy tắc "không âm". Sau khi giao dịch (dù thành hay bại), tổng số tiền trong hệ thống phải logic và chính xác
+
+### Isolation (Tính cô lập) – "Việc ai nấy làm"
+
+- Tại một thời điểm, có hàng triệu người cùng giao dịch. Tính cô lập đảm bảo các giao dịch này không "giẫm chân" lên nhau.
+- VD: Bạn và vợ/chồng cùng dùng chung một tài khoản có 2 triệu để mua sắm online cùng một lúc
+- Nếu Isolation được đảm bảo: Database sẽ xử lý tuần tự hoặc có cơ chế khóa (locking) sao cho giao dịch A không nhìn thấy trạng thái "dang dở" của giao dịch B. Kết quả cuối cùng phải giống như thể hai người thực hiện cách nhau một khoảng thời gian, tránh việc cả hai cùng mua món đồ 2 triêụ mà tài khoản vẫn chỉ trừ 2 triệu
+
+### Durability (Tính bền vững) – "Lưu là lưu luôn"
+
+- Một khi hệ thống đã báo "Giao dịch thành công", thì dữ liệu đó phải được ghi xuống ổ cứng vĩnh viễn
+- VD: Ngay giây phút màn hình hiện "Bạn đã chuyển tiền thành công", bỗng nhiên trạm điện nổ, server sập nguồn tối thui
+- Nếu tính Durability được đảm bảo: Khi server khởi động lại, giao dịch của bạn vẫn phải nằm đó, không được phép "bay màu" hay mất dấu vết
+
+### Bảng tổng hợp
+
+| Chữ cái | Tính chất | Ý nghĩa ngắn gọn |
+| --- | --- | --- |
+| A | Atomicity | Thành công cả cụm hoặc thất bại cả cụm. |
+| C | Consistency | Không vi phạm quy tắc dữ liệu. |
+| I | Isolation | Giao dịch này không làm phiền giao dịch kia. |
+| D | Durability | Hệ thống sập thì dữ liệu đã xong vẫn còn đó. |
+
 ## Những lỗi thường gặp khi dùng ACID
 
 ### Dirty Read
