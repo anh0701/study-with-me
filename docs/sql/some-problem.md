@@ -3,6 +3,7 @@ layout: default
 title: 7.6 Một số bài toán
 parent: 07. Database
 description: ""
+has_toc: side_bar 
 ---
 
 # Một số bài toán
