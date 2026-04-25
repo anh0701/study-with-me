@@ -2,12 +2,8 @@
 layout: default
 title: transfer repositories from GitLab to GitHub
 nav_exclude: true
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # problem
 

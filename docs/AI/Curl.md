@@ -4,12 +4,8 @@ title: 23.3 Độ xoáy Curl
 parent: 23. AI
 description: ""
 permalink: /curl/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # Curl
 

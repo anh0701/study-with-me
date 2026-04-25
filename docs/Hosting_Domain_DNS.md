@@ -2,12 +2,8 @@
 layout: default
 title: 04. Hosting, Domain, DNS
 description: ""
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ### Hosting, Domain, DNS
 

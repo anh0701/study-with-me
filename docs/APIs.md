@@ -2,12 +2,8 @@
 layout: default
 title: 08. APIs
 description: ""
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ### APIs
 API (Application Programming Interface) 

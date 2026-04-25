@@ -4,12 +4,8 @@ title: 23.1 Chuỗi Markov
 parent: 23. AI
 description: ""
 permalink: /markov-chain/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ## Khái niệm
 

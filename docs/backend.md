@@ -2,12 +2,8 @@
 layout: default
 title: 25. Backend Roadmap
 description: ""
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ## Nền tảng lập trình (Programming Fundametals)
 

@@ -4,12 +4,8 @@ title: 22.2 .NET API & SQL
 parent: 22. MES
 description: ""
 permalink: /dotnet-api-sql/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # .NET API & SQL
 

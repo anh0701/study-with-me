@@ -3,12 +3,8 @@ layout: default
 title: 27.2 Layout
 parent: 27. CSS
 description: ""
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # Layout
 

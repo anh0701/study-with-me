@@ -3,12 +3,8 @@ layout: default
 title: 20.1 Man in the middle (MitM)
 parent: 20. Cybersecurity
 description: ""
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ### Man in the middle (MitM)
 

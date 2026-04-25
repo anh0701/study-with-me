@@ -4,12 +4,8 @@ title: 13.2 Microservices
 parent: 13. Architectural Patterns
 description: ""
 permalink: /microservices/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ### Microservices
 

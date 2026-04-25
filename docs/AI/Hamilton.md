@@ -4,12 +4,8 @@ title: 23.2 Thuật toán đồ thị Hamilton
 parent: 23. AI
 description: ""
 permalink: /hamilton/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # Thuật toán đồ thị Hamilton
 

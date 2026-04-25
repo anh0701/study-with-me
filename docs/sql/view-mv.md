@@ -3,12 +3,8 @@ layout: default
 title: 7.4 View vs Materialized View
 parent: 07. Database
 description: ""
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # View vs Materialized View
 

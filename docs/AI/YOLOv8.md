@@ -4,12 +4,8 @@ title: 23.5 YOLOv8
 parent: 23. AI
 description: ""
 permalink: /yolov8/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ## 1. Khái niệm
 

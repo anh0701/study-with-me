@@ -4,12 +4,8 @@ title: 24.1 Deploy không downtime
 parent: 24. System Design
 description: ""
 permalink: /deploy-khong-downtime/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # Deploy không downtime
 

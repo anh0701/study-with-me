@@ -4,12 +4,8 @@ title: 13.1 Monolithic
 parent: 13. Architectural Patterns
 description: ""
 permalink: /monolithic-apps/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 #### Đặc điểm của ứng dụng Monolithic: 
 

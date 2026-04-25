@@ -4,12 +4,8 @@ title: 24.3 Hệ thống banking
 parent: 24. System Design
 description: ""
 permalink: /banking/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # Hệ thống banking
 

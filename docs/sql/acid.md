@@ -3,6 +3,7 @@ layout: default
 title: 7.5 ACID
 parent: 07. Database
 description: ""
+has_toc: side_bar 
 ---
 
 # ACID

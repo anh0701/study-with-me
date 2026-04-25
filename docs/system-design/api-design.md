@@ -4,12 +4,8 @@ title: 24.2 Thiết kế API
 parent: 24. System Design
 description: ""
 permalink: /api-design/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # Thiết kế API
 

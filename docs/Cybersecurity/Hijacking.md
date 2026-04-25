@@ -2,12 +2,8 @@
 layout: default
 title: 20.2 Hijacking
 parent: 20. Cybersecurity
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ### Hijacking
 

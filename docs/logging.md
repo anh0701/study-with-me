@@ -2,12 +2,8 @@
 layout: default
 title: 26. Logging
 description: ""
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ## 5 loại logging quan trọng trong hệ thống backend
 

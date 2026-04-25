@@ -3,12 +3,8 @@ layout: default
 title: 29.2 Color Mixing
 parent: 29. UI/UX
 description: ""
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ## 1. Color Theory
 

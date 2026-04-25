@@ -4,6 +4,7 @@ title: 23.4 Backtracking
 parent: 23. AI
 description: ""
 permalink: /backtracking/
+has_toc: side_bar 
 ---
 
 # Backtracking

@@ -2,12 +2,8 @@
 layout: default
 title: gen multi ssh
 nav_exclude: true
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 1. gen key:
 

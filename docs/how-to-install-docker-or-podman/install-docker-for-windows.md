@@ -4,12 +4,8 @@ title: 19.1 Windows Home
 parent: 19. How to install docker/podman
 description: ""
 permalink: /install-docker-for-windows/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 ## install docker for Windows Home
 

@@ -4,12 +4,8 @@ title: 22.1.1 C# core
 parent: 22. MES
 description: ""
 permalink: /csharp-tips/
+has_toc: side_bar 
 ---
-
-<div class="my-right-toc" markdown="1">
-1. TOC
-{:toc}
-</div>
 
 # Async nâng cao
 
