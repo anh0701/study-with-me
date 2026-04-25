@@ -17,17 +17,32 @@
   z-index: 1000;
 }
 
-.content-with-toc {
-  display: grid;
-  grid-template-columns: 1fr 260px;
-  gap: 40px;
-}
-
-.right-toc {
-  width: 260px;
-  margin-left: 40px;
-  position: sticky;
+#nav-sidebar {
+  position: fixed;
   top: 100px;
+  right: 32px;
+  width: 260px;
   max-height: calc(100vh - 120px);
   overflow-y: auto;
+  padding: 16px;
+  border-left: 1px solid #eee;
+  font-size: 14px;
+}
+
+#nav-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#nav-sidebar li {
+  margin-bottom: 8px;
+}
+
+#nav-sidebar a {
+  text-decoration: none;
+  color: #666;
+}
+
+#nav-sidebar a:hover {
+  color: #000;
 }
