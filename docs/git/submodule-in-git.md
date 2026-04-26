@@ -1,11 +1,14 @@
 ---
 layout: default
-title: git submodule
-nav_exclude: true
+title: 6.9 git submodule
+parent: 06. Git
+description: ""
 has_toc: side_bar 
 ---
 
-# Cú pháp
+# Git submodule
+
+## 1. Cú pháp
 
 ```sh
     git submodule add  URL-REPO URL-LOCAL

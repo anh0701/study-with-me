@@ -1,15 +1,18 @@
 ---
 layout: default
-title: remove git
-nav_exclude: true
+title: 6.8 remove git
+parent: 06. Git
+description: ""
 has_toc: side_bar 
 ---
 
-# problem
+# Remove git
+
+## 1. problem
 
 - no push code: maybe child directory have folder .git => move it
 
-# resolve
+## 2. resolve
 
 - B1: check:
     + 1.

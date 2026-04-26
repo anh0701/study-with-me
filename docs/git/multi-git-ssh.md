@@ -1,9 +1,12 @@
 ---
 layout: default
-title: gen multi ssh
-nav_exclude: true
+title: 6.7 gen multi ssh
+parent: 06. Git
+description: ""
 has_toc: side_bar 
 ---
+
+# Gen multi ssh
 
 1. gen key:
 

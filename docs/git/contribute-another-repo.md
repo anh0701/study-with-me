@@ -1,7 +1,8 @@
 ---
 layout: default
-title: contribute another repo
-nav_exclude: true
+title: 6.4 contribute another repo
+parent: 06. Git
+description: ""
 has_toc: side_bar 
 ---
 

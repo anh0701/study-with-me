@@ -1,7 +1,8 @@
 ---
 layout: default
-title: create folder/project in local before create repo in github
-nav_exclude: true
+title: 6.3 create folder/project in local before create repo in github
+parent: 06. Git
+description: ""
 has_toc: side_bar 
 ---
 

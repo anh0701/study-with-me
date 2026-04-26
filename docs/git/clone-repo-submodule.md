@@ -1,15 +1,18 @@
 ---
 layout: default
-title: clone repo submodule
-nav_exclude: true
+title: 6.5 clone repo submodule
+parent: 06. Git
+description: ""
 has_toc: side_bar 
 ---
 
-## problem
+# Clone repo submodule
+
+## 1. problem
 
 - when clone repo workspace, submodule folder null
 
-## resolve
+## 2. resolve
 
 - run command:
 

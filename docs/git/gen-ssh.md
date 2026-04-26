@@ -1,9 +1,12 @@
 ---
 layout: default
-title: gen ssh in windows
-nav_exclude: true
+title: 6.2 gen ssh in windows
+parent: 06. Git
+description: ""
 has_toc: side_bar 
 ---
+
+# gen ssh in windows
 
 - B1:
 
