@@ -2,6 +2,7 @@
 layout: default
 title: 30. Spring boot
 description: ""
+has_toc: side_bar 
 ---
 
 # Spring boot
@@ -147,3 +148,5 @@ hibernate.default_batch_fetch_size=50
 ## 5. Open Session In View là gì?
 
 ## 6. phân biệt JOIN, JOIN FETCH, EntityGraph
+
+## 7. Khi Backend (Java) và Frontend (React) "nói chuyện" với nhau qua REST API: Làm thế nào để đảm bảo an toàn cho các API này? Nếu Frontend gửi một request lên và Backend trả về lỗi 403 Forbidden, sẽ kiểm tra những yếu tố nào đầu tiên để debug?
