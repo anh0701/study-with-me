@@ -7,6 +7,8 @@ permalink: /yolov8/
 has_toc: side_bar 
 ---
 
+# YOLOv8
+
 ## 1. Khái niệm
 
 - YOLOv8 = You Only Look Once -> Ý tưởng: dự đoán object trực tiếp từ ảnh trong 1 lần forward pass

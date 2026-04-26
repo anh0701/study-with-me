@@ -7,12 +7,12 @@ has_toc: side_bar
 
 # Computer Fundamentals
 
-## CPU làm gì
+## 1. CPU làm gì
 
-## RAM vs Flash
+## 2. RAM vs Flash
 
-## Interrupt là gì
+## 3. Interrupt là gì
 
-## Stack / Heap
+## 4. Stack / Heap
 
-## Compile → Link → Flash → Run
+## 5. Compile → Link → Flash → Run

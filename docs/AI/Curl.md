@@ -9,7 +9,7 @@ has_toc: side_bar
 
 # Curl
 
-## Khái niệm
+## 1. Khái niệm
 
 - Trong 2 chiều
 

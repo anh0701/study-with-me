@@ -5,11 +5,13 @@ description: ""
 has_toc: side_bar 
 ---
 
-### Browser
+# Browser
+
+## 1. Khái niệm
 
 **Browser** (hay còn gọi là trình duyệt web) là một ứng dụng phần mềm cho phép bạn truy cập và tương tác với các trang web trên Internet. Các trình duyệt web phổ biến hiện nay bao gồm Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, và Opera
 
-**Cách hoạt động của trình duyệt web:**
+## 2. Cách hoạt động của trình duyệt web
 
 1. **Giao thức truyền siêu văn bản (HTTP/HTTPS)**: Trình duyệt sử dụng giao thức này để truyền tải dữ liệu giữa máy tính của bạn và máy chủ web
 2. **Công cụ kết xuất (Rendering Engine)**: Khi bạn nhập

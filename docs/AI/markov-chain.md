@@ -7,11 +7,13 @@ permalink: /markov-chain/
 has_toc: side_bar 
 ---
 
-## Khái niệm
+# Chuỗi Markov
+
+## 1. Khái niệm
 
 - Xác suất trạng thái tiếp theo chỉ phụ thuộc vào trạng thái hiện tại, không phụ thuộc vào quá khứ trước đó.
 
-## Ý tưởng
+## 2. Ý tưởng
 
 - Giả sử hệ thống thời tiết với 3 trạng thái: Sunny, Cloudy, Rainy  
 
@@ -36,7 +38,7 @@ $$
 
 - Mỗi hàng = xác suất chuyển từ trạng thái hiện tại sang trạng thái khác
 
-## Mô hình toán học
+## 3. Mô hình toán học
 
 - chuỗi Markov là một dãy biến ngẫu nhiên:
 
@@ -52,7 +54,7 @@ $$
 
 Nghĩa là: Quá khứ không quan trọng - chỉ trạng thái hiện tại quyết định tương lai
 
-## Ví dụ
+## 4. Ví dụ
 
 - Người dùng website có trạng thái truy cập: Home, Product, Checkout, Exit
 
@@ -66,7 +68,7 @@ Nghĩa là: Quá khứ không quan trọng - chỉ trạng thái hiện tại qu
 
 - Mô hình này sẽ giúp dự đoán: người dùng có mua hàng không, họ sẽ rời website khi nào
 
-## Ứng dụng
+## 5. Ứng dụng
 
 - Search Engine (Page Rank)
     - Ý tưởng: mỗi trang web là một trạng thái, link là xác suất chuyển
@@ -83,4 +85,3 @@ Nghĩa là: Quá khứ không quan trọng - chỉ trạng thái hiện tại qu
     - Ví dụ: robot vacuum xác suất chuyển sang ô khác
 - Biology: ứng dụng trong phân tích DNA, gene prediction
 - Gợi ý gõ từ của bàn phím
-

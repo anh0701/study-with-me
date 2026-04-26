@@ -5,9 +5,11 @@ description: ""
 has_toc: side_bar 
 ---
 
-## Nền tảng lập trình (Programming Fundametals)
+# Backend Roadmap
 
-### 1. Syntax cơ bản
+## 1. Nền tảng lập trình (Programming Fundametals)
+
+### 1.1. Syntax cơ bản
 
 - biến
 - kiêủ dữ liệu
@@ -17,13 +19,13 @@ has_toc: side_bar
 - array/list
 - string
 
-### 2. Tư duy lập trình
+### 1.2. Tư duy lập trình
 
 - decomposition (chia nhỏ bài toán)
 - debugging
 - đọc track trace
 
-### 3. OOP cơ bản
+### 1.3. OOP cơ bản
 
 - class
 - object
@@ -32,13 +34,13 @@ has_toc: side_bar
 - polymorphism
 - abstraction
 
-### 4. Clean code
+### 1.4. Clean code
 
 - naming
 - function nhỏ
 - tách module
 
-### 5. Chọn ngôn ngữ
+### 1.5. Chọn ngôn ngữ
 
 | Language   | Backend framework |
 | ---------- | ----------------- |
@@ -48,9 +50,9 @@ has_toc: side_bar
 | Go         | Gin               |
 | JavaScript | Node.js           |
 
-## Data Structures & Algorithms
+## 2. Data Structures & Algorithms
 
-### 1. Data structures
+### 2.1. Data structures
 
 - Array
 - Linked List
@@ -59,7 +61,7 @@ has_toc: side_bar
 - Tree
 - Graph
 
-### 2. Algorithms
+### 2.2. Algorithms
 
 - searching
 - sorting
@@ -68,9 +70,9 @@ has_toc: side_bar
 - BFS/DFS
 - dynamic programming (basic)
 
-## Computer Science Foundations
+## 3. Computer Science Foundations
 
-### 1. Operating System
+### 3.1. Operating System
 
 - process
 - thread
@@ -79,14 +81,14 @@ has_toc: side_bar
 - deadlock
 - concurrency
 
-### 2. Networking
+### 3.2. Networking
 
 - TCP/IP: [see more ...](TCP.md)
 - HTTP: [see more ...](HTTPvsHTTPS.md)
 - DNS: [see more ...](Hosting_Domain_DNS.md)
 - load balancing
 
-### 3. Database theory
+### 3.3. Database theory
 
 - relational model
 - normalization
@@ -95,9 +97,9 @@ has_toc: side_bar
 - ACID
 - transaction
 
-## Backend Fundamentals
+## 4. Backend Fundamentals
 
-### 1. HTTP API
+### 4. 1. HTTP API
 
 - REST
 - request/response
@@ -107,14 +109,14 @@ has_toc: side_bar
 
 [API](APIs.md)
 
-### 2. Authentication
+### 4.2. Authentication
 
 - session
 - cookie
 - JWT
 - OAuth
 
-### 3. Caching
+### 4.3. Caching
 
 - Redis
 - cache aside
@@ -122,7 +124,7 @@ has_toc: side_bar
 
 [Catching](Caching.md)
 
-### 4. Message Queue
+### 4.4. Message Queue
 
 - producer
 - consumer
@@ -131,16 +133,16 @@ has_toc: side_bar
 
 [Message brokers](MessageBrokers.md)
 
-## Database
+## 5. Database
 
-### 1. SQL
+### 5.1. SQL
 
 - join
 - subquery
 - index
 - execution plan
 
-### 2. Database phổ biến
+### 5.2. Database phổ biến
 
 | Type       | Example            |
 | ---------- | ------------------ |
@@ -149,9 +151,9 @@ has_toc: side_bar
 | document   | MongoDB            |
 | search     | Elasticsearch      |
 
-## System Design
+## 6. System Design
 
-### Topics
+### 6.1. Topics
 
 - monolith vs microservices: [Monolithic Apps]({{ site.baseurl }}/monolithic-apps/), [Microservices]({{ site.baseurl }}/microservices/)
 - load balancer
@@ -161,29 +163,29 @@ has_toc: side_bar
 - database replication
 - sharding
 
-### Ví dụ design
+### 6.2. Ví dụ design
 
 - URL shortener
 - chat system
 - notification system
 - banking transfer
 
-## DevOps basics
+## 7. DevOps basics
 
-### 1. Linux
+### 7.1. Linux
 
 - process
 - port
 - log
 - permissions
 
-### 2. Docker
+### 7.2. Docker
 
 - container
 - image
 - docker compose
 
-### 3. CI/CD
+### 7.3. CI/CD
 
 - pipeline
 - build
@@ -191,28 +193,28 @@ has_toc: side_bar
 
 [see more ...](CI_CD.md)
 
-## Kiến thức nâng cao
+## 8. Kiến thức nâng cao
 
-### 1. Distributed system
+### 8.1. Distributed system
 
 - consensus
 - CAP theorem
 - eventual consistency
 
-### 2. High concurrency
+### 8.2. High concurrency
 
 - rate limiting
 - circuit breaker
 - idempotency
 
-### 3. Data pipeline
+### 8.3. Data pipeline
 
 - ETL
 - stream processing
 
-## Một số project nhỏ nên làm
+## 9. Một số project nhỏ nên làm
 
-### 1. Rest API Todo
+### 9.1. Rest API Todo
 
 feature
 
@@ -221,14 +223,14 @@ feature
 - pagination
 - search
 
-### 2. Blog system
+### 9.2. Blog system
 
 - comment
 - tagging
 - like
 - search
 
-### 3. mini ecommerce
+### 9.3. mini ecommerce
 
 - cart
 - order

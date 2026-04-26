@@ -5,9 +5,11 @@ description: ""
 has_toc: side_bar 
 ---
 
-## 5 loại logging quan trọng trong hệ thống backend
+# Logging
 
-### 1. Request / Response Log
+## 1. 5 loại logging quan trọng trong hệ thống backend
+
+### 1.1. Request / Response Log
 
 - Log toàn bộ request và response của API.
 - Mục đích: debug API, trace user action, phát hiện request lỗi
@@ -32,7 +34,7 @@ has_toc: side_bar
 - Dùng khi: API gateway, microservice, public API
 - Không log: password, token, credit card
 
-### 2. Business logic log
+### 1.2. Business logic log
 
 - Không phải log kiểu: `NullPointException`, mà log theo ngữ cảnh business.
 
@@ -44,7 +46,7 @@ userId=1024
 
 - Mục tiêu log để hiểu chuyện gì xảy ra chứ không chỉ biết có lỗi.
 
-### 3. Latency log (độ trễ)
+### 1.3. Latency log (độ trễ)
 
 - log thời gian xử lý của từng phần hệ thống
 
@@ -58,7 +60,7 @@ userId=1024
 
 - Dùng để phát hiện bottleneck, slow database, slow API.
 
-### 4. business event log
+### 1.4. business event log
 
 - log sự kiện business không phải lỗi
 
@@ -73,7 +75,7 @@ userId=1024
 
 - dùng để analytics, audit, BI, fraud detection
 
-### 5. retry & circuit breaker log
+### 1.5. retry & circuit breaker log
 
 - log khả năng chịu lỗi của hệ thống
 
@@ -85,18 +87,18 @@ userId=1024
 }
 ```
 
-## Logging chuẩn
+## 2. Logging chuẩn
 
-### 1. structured logging
+### 2.1. structured logging
 
 - log dạng json: dễ search, dễ phân tích
 
-### 2. Correlation ID
+### 2.2. Correlation ID
 
 - mỗi request có requestId
 - log ở mội service, nhờ vậy trace được toàn bộ request
 
-### 3. Centralized logging
+### 2.3. Centralized logging
 
 - log không để local, đẩy vài hệ thống như: elasticsearch, logstash, kibana
 - stack này gọi là ELK stack

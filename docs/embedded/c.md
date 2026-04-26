@@ -7,7 +7,7 @@ has_toc: side_bar
 
 # C
 
-## Pointer
+## 1. Pointer
 
 ![pointer](../../assets/images/pointer.png)
 
@@ -149,8 +149,8 @@ ptr->x = 10; // tương đương (*ptr).x = 10;
 
 4. So sánh pointer C và reference C++
 
-## memory
+## 2. memory
 
-## struct
+## 3. struct
 
-## Bitwise (& | ^ << >>)  
+## 4. Bitwise (& | ^ << >>)  

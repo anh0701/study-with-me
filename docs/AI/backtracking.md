@@ -9,16 +9,16 @@ has_toc: side_bar
 
 # Backtracking
 
-## Bài toán N-Queens
+## 1. Bài toán N-Queens
 
 - Cho bàn cờ NxN, đặt N quân hậu (queen) sao cho không có 2 quân hậu nào ăn nhau. Trong cờ vua, quân hậu có thể đi (ngang, dọc, chéo). Vì vậy ta phải đảm bảo: không cùng hàng, không cùng cột, không cùng đường chéo.
 
-## Các cách giải quyết bài toán
+## 2. Các cách giải quyết bài toán
 
 1. Brute force: đặt ngẫu nhiên trên bàn cờ, nên số case: 2^(N^2) -> cực lớn.
 2. Backtracking: đặt quân hậu từng hàng, nếu sai thì quay lại thử vị trí khác. Độ phức tạp: O(N!)
 
-## Ý tưởng thuật toán
+## 3. Ý tưởng thuật toán
 
 ```sh
 solve(row):
@@ -38,7 +38,7 @@ solve(row):
             remove queen   // backtrack
 ```
 
-## Ứng dụng
+## 4. Ứng dụng
 
 | Bài toán       | Ý nghĩa                   |
 | -------------- | ------------------------- |

@@ -5,6 +5,7 @@ parent: 29. UI/UX
 description: ""
 has_toc: side_bar 
 ---
+# Color Mixing
 
 ## 1. Color Theory
 

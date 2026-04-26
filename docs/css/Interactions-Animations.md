@@ -8,8 +8,8 @@ has_toc: side_bar
 
 # Interactions & Animations
 
-## Transitions
+## 1. Transitions
 
-## Keyframe Animations
+## 2. Keyframe Animations
 
-## Transform
+## 3. Transform

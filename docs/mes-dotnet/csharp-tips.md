@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 22.1.1 C# core
+title: 22.2 C# tips
 parent: 22. MES
 description: ""
 permalink: /csharp-tips/
@@ -9,7 +9,7 @@ has_toc: side_bar
 
 # Async nâng cao
 
-## ValueTask - tối ưu performance
+## 1. ValueTask - tối ưu performance
 
 - Thông thường async trả về `Task`, `Task<T>`
 - Vấn đề là `Task` là `object`, mỗi lần gọi async sẽ tạo object mới nên GC phải dọn, nếu API được gọi hàng triệu lần thì GC sẽ tốn tài nguyên
@@ -32,7 +32,7 @@ has_toc: side_bar
     await httpClient.GetAsync()
 ```
 
-## IAsyncEnumerable - stream async
+## 2. IAsyncEnumerable - stream async
 
 - Trước đây: `List<User> users = await GetUsers();`, nhược điểm phải load toàn bộ data trước
 
@@ -63,7 +63,7 @@ has_toc: side_bar
 
 - Dùng rất nhiều trong: đọc database lớn, đọc file lớn, streaming API
 
-## Parallel.ForEachAsync
+## 3. Parallel.ForEachAsync
 
 - .NET có API rất mạnh: `Parallel.ForEachAsync`
 - Ví dụ:
@@ -94,7 +94,7 @@ foreach (var url in urls)
 }
 ```
 
-## Tóm tắt async nâng cao
+## 4. Tóm tắt async nâng cao
 
 | Kỹ thuật                | Dùng khi          |
 | ----------------------- | ----------------- |
@@ -102,9 +102,9 @@ foreach (var url in urls)
 | `IAsyncEnumerable`      | stream dữ liệu    |
 | `Parallel.ForEachAsync` | xử lý song song   |
 
-## Một số lỗi async
+## 5. Một số lỗi async
 
-### 1. Fire-and-forget async
+### 5.1. Fire-and-forget async
 
 - Ví dụ:
 
@@ -148,7 +148,7 @@ foreach (var url in urls)
     var task = SendEmailAsync();
 ```
 
-### 2. Tạo quá nhiều Task
+### 5.2. Tạo quá nhiều Task
 
 ```sh
     var tasks = new List<Task>();
@@ -174,7 +174,7 @@ await Parallel.ForEachAsync(items, async (item, ct) =>
 });
 ```
 
-### 3. Async method nhưng không async thật
+### 5.3. Async method nhưng không async thật
 
 ```sh
 public async Task<User> GetUser()
@@ -193,7 +193,7 @@ public async Task<User> GetUser()
 }
 ```
 
-### 4. Await trong loop (làm code chậm 10x)
+### 5.4. Await trong loop (làm code chậm 10x)
 
 ```sh
 foreach (var id in ids)
@@ -210,7 +210,7 @@ await Task.WhenAll(tasks);
 # thời gian khoảng 200ms
 ```
 
-### 5. Blocking async code
+### 5.5. Blocking async code
 
 ```sh
 Task.Delay(1000).Wait();
@@ -228,7 +228,7 @@ public async Task Test()
 
 - Đúng `await Task.Delay(2000);`
 
-### Tóm tắt 5 lỗi nguy hiểm
+### 5.6 Tóm tắt 5 lỗi nguy hiểm
 
 | Lỗi              | Hậu quả                     |
 | ---------------- | --------------------------- |
@@ -238,4 +238,4 @@ public async Task Test()
 | await trong loop | code chậm                   |
 | blocking async   | mất lợi ích async           |
 
-## Phân biệt Task vs Thread vs async
+## 6. Phân biệt Task vs Thread vs async

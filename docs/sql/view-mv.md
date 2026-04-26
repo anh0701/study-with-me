@@ -10,7 +10,7 @@ has_toc: side_bar
 
 > Một query JOIN 5 bảng chạy 3 giây -> giảm còn 30ms mà không cần sửa code backend?
 
-## Khái niệm
+## 1. Khái niệm
 
 1. View: là một "query được đặt tên", không lưu dữ liệu
 2. Materialized View: là "query được tính trước", lưu kết quả thành một bảng
@@ -23,7 +23,7 @@ has_toc: side_bar
 | Cần làm mới | Không | Có |
 | Tối ưu hiệu suất | Không | Rất mạnh |
 
-## Ưu/Nhược điểm của Materialized View
+## 2. Ưu/Nhược điểm của Materialized View
 
 - Ưu điểm:
 
@@ -39,7 +39,7 @@ has_toc: side_bar
     - Quá trình làm mới có thể tốn kém
     - Không phải CSDL nào cũng hỗ trợ
 
-## Khi nào nên dùng?
+## 3. Khi nào nên dùng?
 
 - Nên dùng khi:
 

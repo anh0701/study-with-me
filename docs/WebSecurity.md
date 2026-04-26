@@ -5,30 +5,30 @@ description: ""
 has_toc: side_bar 
 ---
 
-### Web Security
+# Web Security
 
-#### MD5 
+## 1. MD5
 
-#### SHA
+## 2. SHA
 
-#### scrypt
+## 3. scrypt
 
-#### bcrypt
+## 4. bcrypt
 
-#### API Security Best Practices
+## 5. API Security Best Practices
 
-##### HTTPS
+### 5.1 HTTPS
 
 [Chi tiết](HTTPvsHTTPS.md)
 
-##### OWASP Risks
+### 5.2 OWASP Risks
 
-##### CORS
+### 5.3 CORS
 
-##### SSL/TLS
+### 5.4 SSL/TLS
 
 [Chi tiết](SSLvsTLS.md)
 
-##### CSP
+### 5.5 CSP
 
-##### Server Security
+### 5.6 Server Security

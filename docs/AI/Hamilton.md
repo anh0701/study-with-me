@@ -9,12 +9,12 @@ has_toc: side_bar
 
 # Thuật toán đồ thị Hamilton
 
-## Xuất phát bài toán
+## 1. Xuất phát bài toán
 
 - Bài toán xuất phát từ nhà toán học, ông tạo ra một trò chơi toán học tên là `Icosian Game`. Nhiệm vụ: *đi qua tất cả các đỉnh chỉ một lần* rồi quay về điểm xuất phát.
 - Trò chơi này được mô hình hóa bằng đồ thị.
 
-## Định nghĩa bài toán Hamilton
+## 2. Định nghĩa bài toán Hamilton
 
 - Trong đồ thị G = (V, E)
 - Một **Hamilton Path** là: đường đi qua *tất cả các đỉnh đúng 1 lần*. Ví dụ: `A - B - C - D - E` đi qua mọi đỉnh đúng một lần.
@@ -33,7 +33,7 @@ A — B — C — D — E
 | Hamilton Path  | đi qua mọi đỉnh 1 lần            |
 | Hamilton Cycle | đi qua mọi đỉnh 1 lần và quay về |
 
-## Cách giải (thuật toán)
+## 3. Cách giải (thuật toán)
 
 - Các cách giải phổ biến:
 
@@ -64,7 +64,7 @@ hamilton(v):
 
 - Dùng khi đồ thị lớn: greedy, genetic algorithm, simulated annealing.
 
-## Khác gì với các bài toán đồ thị nổi tiếng khác
+## 4. Khác gì với các bài toán đồ thị nổi tiếng khác
 
 - So sánh Hamilton với Euler.
 
@@ -79,7 +79,7 @@ hamilton(v):
     - Hamilton: `A - B - C - D - E`
     - Euler: đi qua **mọi con đường** đúng 1 lần
 
-## Ứng dụng thực tế hiện nay
+## 5. Ứng dụng thực tế hiện nay
 
 - Logistics: tối ưu giao hàng, xe tải, shipper
 - Thiết kế mạch điện: trong VLSI Design, tối ưu đường đi của dây dẫn
@@ -87,7 +87,7 @@ hamilton(v):
 - Sinh học: Trong Bioinformatics, dùng trong genome assembly, DNA sequencing
 - Game AI: NPC phải đi qua toàn bộ map, không lặp vị trí
 
-## Bài toán mã đi tuần
+## 6. Bài toán mã đi tuần
 
 - Là một trường hợp đặc biệt của Hamilton Path
 - Bài toán xuất phát từ quân mã trong cờ cua, quy tắc quân mã là đi hình chữ L

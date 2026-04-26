@@ -11,7 +11,7 @@ has_toc: side_bar
 
 ## 1. Các bài toán
 
-### Bài toán 1. Bấm “chuyển khoản” nhiều lần khi mạng lỗi nhưng không bị trừ tiền nhiều lần
+### 1.1 Bài toán 1. Bấm “chuyển khoản” nhiều lần khi mạng lỗi nhưng không bị trừ tiền nhiều lần
 
 - Thường là nhờ cơ chế kỹ thuật quan trọng: transaction, Idempotency, core banking, cơ chế hàng đợi (queue)
 

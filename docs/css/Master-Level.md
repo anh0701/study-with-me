@@ -8,10 +8,10 @@ has_toc: side_bar
 
 # Master Level
 
-## CSS Variables
+## 1. CSS Variables
 
-## SASS/SCSS
+## 2. SASS/SCSS
 
-## Architecture (BEM, Utility-first)
+## 3. Architecture (BEM, Utility-first)
 
-## Performance
+## 4. Performance

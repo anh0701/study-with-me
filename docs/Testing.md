@@ -5,10 +5,10 @@ description: ""
 has_toc: side_bar 
 ---
 
-### Testing
+# Testing
 
-#### Integration Testing
+## 1. Integration Testing
 
-#### Unit Testing
+## 2. Unit Testing
 
-#### Functional Testing
+## 3. Functional Testing

@@ -5,23 +5,25 @@ description: ""
 has_toc: side_bar 
 ---
 
-### GIT
+# GIT
+
+## 1. Khái niệm
 
 - Git là một hệ thống quản lý phiên bản phân tán (Distributed Version Control System - DVCS) mã nguồn mở và miễn phí. Nó được thiết kế để xử lý mọi thứ từ các dự án nhỏ đến rất lớn một cách nhanh chóng và hiệu quả.
 
-#### Cách hoạt động
+## 2. Cách hoạt động
 
 - Git lưu trữ dữ liệu dưới dạng các ảnh chụp nhanh (snapshots) của toàn bộ dự án tại các thời điểm khác nhau.
 Khi bạn thực hiện các thay đổi commit, Git sẽ chụp lại trạng thái hiện tại của dự án và lưu trữ nó. Nếu không có thay đổi, Git chỉ lưu trữ tham chiếu đến ảnh chụp trước đó.
 
-#### Vì sao chúng ta cần dùng Git
+## 3. Vì sao chúng ta cần dùng Git
 
 - Quản lý phiên bản hiệu quả: giúp bạn theo dõi mọi thay đổi trong mã nguồn, cho phép bạn quay lại các phiên bản trước đó nếu cần.
 - Hỗ trợ làm việc nhóm: cho phép nhiều người cùng làm việc trên một dự án mà không lo xung đột mã nguồn.
 - Tính toàn vẹn dữ liệu: đảm bảo rằng mọi thay đổi đều được ghi lại và không thể thay đổi mà không bị phát hiện.
 - Linh hoạt và phân tán: mỗi lập trình viên có một bản sao đầy đủ của kho lưu trữ, giúp làm việc offline và đồng bộ hóa dễ dàng khi có kết nối mạng.
 
-#### Git, GitHub, GitLab
+## 4. Git, GitHub, GitLab
 
 - **GitHub**: là một dịch vụ lưu trữ kho Git dựa trên web. Nó cung cấp các tính năng như quản lý dự án, wiki, và tích hợp CI để hỗ trợ phần mềm.
 GitHub nổi tiếng với cộng đồng lớn và là nơi lưu trữ nhiều dự án mã nguồn mở.
@@ -33,7 +35,7 @@ GitLab cung cấp các công cụ như theo dõi vấn đề, quản lý nhóm, 
 > **GitHub**: là dịch vụ lưu trữ kho Git và các tính năng cộng đồng, và quản lý dự án.  
 > **Gitlab**: là dịch vụ lưu trữ kho Git và các tính năng quản lý dự án và DevOps.
 
-#### Quy trình làm việc với Git
+## 5. Quy trình làm việc với Git
 
 ![img git workflow](../../assets/images/img_git_workflow.png)
 
@@ -52,7 +54,7 @@ GitLab cung cấp các công cụ như theo dõi vấn đề, quản lý nhóm, 
 
 - Sử dụng các công cụ CI để tự động kiểm tra và xây dựng mã nguồn mỗi khi có thay đổi. Điều này giúp phát hiện lỗi sớm và đảm bảo mã nguồn luôn ở trạng thái ổn định.
 
-#### Các lệnh cơ bản
+## 6. Các lệnh cơ bản
 
 1. Cấu hình Git
 
@@ -105,7 +107,7 @@ GitLab cung cấp các công cụ như theo dõi vấn đề, quản lý nhóm, 
    git stash pop: Khôi phục các thay đổi đã lưu tạm thời.
 ```
 
-#### Git convenient
+## 7. Git convenient
 
 Git convention, hay còn gọi là Conventional Commits, là một quy ước nhẹ nhàng trên các thông điệp commit trong Git. Quy ước này giúp tạo ra một lịch sử commit rõ ràng và dễ hiểu, đồng thời hỗ trợ việc viết các công cụ tự động hóa dựa trên lịch sử commit đó.
 Cấu trúc của một commit theo Conventional Commits:
@@ -130,7 +132,7 @@ Ví dụ:
     docs: correct spelling of CHANGELOG
 ```
 
-#### Một số trường hợp khi làm việc với git
+## 8. Một số trường hợp khi làm việc với git
 
 > Project được contribute bởi nhiều thành viên, mỗi thành viên sẽ làm việc trên một branch riêng và merge vào develop.  
 > Điều gì xảy ra khi bạn clone project xuống và checkout tạo nhánh mới giống hệt nhánh của bạn trên origin?

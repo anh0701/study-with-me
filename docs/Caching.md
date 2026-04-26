@@ -5,16 +5,16 @@ description: ""
 has_toc: side_bar 
 ---
 
-### Caching
+# Caching
 
-#### Server Side
+## 1. Server Side
 
-##### Memcached
+## 2. Memcached
 
-##### Redis
+### 2.1. Redis
 
 - Redis là một cơ sở dữ liệu key-value nằm trong bộ nhớ (in-memory key-value store), cực kỳ nhanh, thường dùng như cache, message broker, hoặc storage tạm thời cho dữ liệu cần truy xuất nhanh.
 
-#### CDN
+## 2. CDN
 
-##### Client Side
+## 3. Client Side

@@ -7,21 +7,21 @@ has_toc: side_bar
 
 # Message Brokers
 
-## Routing message
+## 1. Routing message
 
-## Filtering
+## 2. Filtering
 
-## Publish/subcribe
+## 3. Publish/subcribe
 
-## Retry
+## 4. Retry
 
-## Persistence
+## 5. Persistence
 
-## Load balancing
+## 6. Load balancing
 
-## Transformation
+## 7. Transformation
 
-## Message Queue
+## 8. Message Queue
 
 | Thuật ngữ      | Ý nghĩa                  |
 | -------------- | ------------------------ |

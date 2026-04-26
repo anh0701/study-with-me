@@ -7,17 +7,17 @@ has_toc: side_bar
 
 # Embedded core
 
-## Vi điều khiển (MCU)
+## 1. Vi điều khiển (MCU)
 
-### STM32
+### 1.1. STM32
 
-### AVR / PIC
+### 1.2. AVR / PIC
 
-### ESP32
+### 1.3. ESP32
 
-### GPIO, Timer, UART / SPI / I2C, PWM, Interrupt
+### 1.4. GPIO, Timer, UART / SPI / I2C, PWM, Interrupt
 
-## RTOS
+## 2. RTOS
 
 - FreeRTOS:  
 
@@ -31,7 +31,7 @@ has_toc: side_bar
 
     - Deadlock là gì
 
-## Robot / Control Core
+## 3. Robot / Control Core
 
 1. Motor DC / Step / Servo
 

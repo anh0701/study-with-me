@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 22.2 .NET Blazor
+title: 22.4 .NET Blazor
 parent: 22. MES
 description: ""
 permalink: /dotnet-blazor/

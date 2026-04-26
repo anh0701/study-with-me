@@ -5,35 +5,40 @@ description: ""
 has_toc: side_bar 
 ---
 
-### SSL/TLS
+# SSL/TLS
 
-#### SSL
+## 1. SSL
 
 Chứng chỉ SSL sử dụng hai loại mã hóa chính: mã hóa đối xứng và mã hóa bất đối xứng. Dưới đây là cách chúng hoạt động:
 
-1. **Mã hóa bất đối xứng (Asymmetric Encryption)**:
-    - **Khóa công khai và khóa riêng**: Máy chủ sử dụng một cặp khóa, gồm khóa công khai (public key) và khóa riêng (private key). Khóa công khai được chia sẻ với mọi người, trong khi khóa riêng được giữ bí mật.
-    - **Quá trình mã hóa**: Khi trình duyệt kết nối với máy chủ, máy chủ sẽ gửi khóa công khai của mình cho trình duyệt. Trình duyệt sử dụng khóa công khai này để mã hóa dữ liệu, và chỉ có khóa riêng của máy chủ mới có thể giải mã dữ liệu này.
-2. **Mã hóa đối xứng (Symmetric Encryption)**:
-    - **Khóa phiên (session key)**: Sau khi kết nối ban đầu được thiết lập và xác thực, trình duyệt và máy chủ sẽ tạo ra một khóa phiên đối xứng. Khóa này được sử dụng để mã hóa và giải mã tất cả dữ liệu truyền trong phiên làm việc đó.
-    - **Quá trình mã hóa**: Khóa phiên được mã hóa bằng khóa công khai của máy chủ và gửi đến máy chủ. Máy chủ sau đó giải mã khóa phiên bằng khóa riêng của mình. Từ đó, cả hai bên sử dụng khóa phiên để mã hóa và giải mã dữ liệu.
-3. **Quá trình bắt tay SSL (SSL Handshake)**:
-    - **Bắt đầu kết nối**: Trình duyệt yêu cầu kết nối bảo mật với máy chủ.
-    - **Gửi chứng chỉ**: Máy chủ gửi chứng chỉ SSL chứa khóa công khai của mình cho trình duyệt.
-    - **Xác thực chứng chỉ**: Trình duyệt xác thực chứng chỉ để đảm bảo máy chủ là hợp pháp.
-        - Chi tiết
+### 1.1. **Mã hóa bất đối xứng (Asymmetric Encryption)**
 
-          SSL xác thực chứng chỉ của trình duyệt thông qua một quá trình kiểm tra kỹ lưỡng, bao gồm các bước sau:
+- **Khóa công khai và khóa riêng**: Máy chủ sử dụng một cặp khóa, gồm khóa công khai (public key) và khóa riêng (private key). Khóa công khai được chia sẻ với mọi người, trong khi khóa riêng được giữ bí mật.
+- **Quá trình mã hóa**: Khi trình duyệt kết nối với máy chủ, máy chủ sẽ gửi khóa công khai của mình cho trình duyệt. Trình duyệt sử dụng khóa công khai này để mã hóa dữ liệu, và chỉ có khóa riêng của máy chủ mới có thể giải mã dữ liệu này.
 
-            1. **Gửi chứng chỉ**: Khi trình duyệt kết nối với một máy chủ, máy chủ sẽ gửi chứng chỉ SSL của mình cho trình duyệt.
-            2. **Kiểm tra chứng chỉ**: Trình duyệt kiểm tra chứng chỉ này bằng cách xác minh chữ ký số của chứng chỉ. Chữ ký số này được tạo ra bởi một Certificate Authority (CA) uy tín, và chỉ có CA đó mới có thể tạo ra chữ ký hợp lệ.
-            3. **Xác thực CA**: Trình duyệt kiểm tra xem CA phát hành chứng chỉ có nằm trong danh sách các CA tin cậy của mình hay không. Nếu CA không nằm trong danh sách này, trình duyệt sẽ cảnh báo người dùng rằng chứng chỉ không đáng tin cậy.
-            4. **Kiểm tra tính toàn vẹn**: Trình duyệt cũng kiểm tra xem chứng chỉ có bị thay đổi hay không bằng cách so sánh chữ ký số với nội dung chứng chỉ. Nếu có bất kỳ thay đổi nào, chữ ký số sẽ không khớp và chứng chỉ sẽ bị coi là không hợp lệ.
-            5. **Kiểm tra thời hạn**: Trình duyệt kiểm tra xem chứng chỉ có còn hiệu lực hay không bằng cách so sánh ngày hiện tại với ngày hết hạn của chứng chỉ.
-    - **Tạo khóa phiên**: Trình duyệt tạo khóa phiên, mã hóa nó bằng khóa công khai của máy chủ và gửi lại cho máy chủ. 
-    - **Mã hóa dữ liệu**: Máy chủ giải mã khóa phiên (bằng private key ⇒ chỉ máy chủ mới đọc được) và bắt đầu sử dụng nó để mã hóa dữ liệu truyền tải.
+### 1.2. **Mã hóa đối xứng (Symmetric Encryption)**
 
-#### TLS (Transport Layer Security)
+- **Khóa phiên (session key)**: Sau khi kết nối ban đầu được thiết lập và xác thực, trình duyệt và máy chủ sẽ tạo ra một khóa phiên đối xứng. Khóa này được sử dụng để mã hóa và giải mã tất cả dữ liệu truyền trong phiên làm việc đó.
+- **Quá trình mã hóa**: Khóa phiên được mã hóa bằng khóa công khai của máy chủ và gửi đến máy chủ. Máy chủ sau đó giải mã khóa phiên bằng khóa riêng của mình. Từ đó, cả hai bên sử dụng khóa phiên để mã hóa và giải mã dữ liệu.
+
+### 1.3. **Quá trình bắt tay SSL (SSL Handshake)**
+
+- **Bắt đầu kết nối**: Trình duyệt yêu cầu kết nối bảo mật với máy chủ.
+- **Gửi chứng chỉ**: Máy chủ gửi chứng chỉ SSL chứa khóa công khai của mình cho trình duyệt.
+- **Xác thực chứng chỉ**: Trình duyệt xác thực chứng chỉ để đảm bảo máy chủ là hợp pháp.
+    - Chi tiết
+
+        SSL xác thực chứng chỉ của trình duyệt thông qua một quá trình kiểm tra kỹ lưỡng, bao gồm các bước sau:
+
+        1. **Gửi chứng chỉ**: Khi trình duyệt kết nối với một máy chủ, máy chủ sẽ gửi chứng chỉ SSL của mình cho trình duyệt.
+        2. **Kiểm tra chứng chỉ**: Trình duyệt kiểm tra chứng chỉ này bằng cách xác minh chữ ký số của chứng chỉ. Chữ ký số này được tạo ra bởi một Certificate Authority (CA) uy tín, và chỉ có CA đó mới có thể tạo ra chữ ký hợp lệ.
+        3. **Xác thực CA**: Trình duyệt kiểm tra xem CA phát hành chứng chỉ có nằm trong danh sách các CA tin cậy của mình hay không. Nếu CA không nằm trong danh sách này, trình duyệt sẽ cảnh báo người dùng rằng chứng chỉ không đáng tin cậy.
+        4. **Kiểm tra tính toàn vẹn**: Trình duyệt cũng kiểm tra xem chứng chỉ có bị thay đổi hay không bằng cách so sánh chữ ký số với nội dung chứng chỉ. Nếu có bất kỳ thay đổi nào, chữ ký số sẽ không khớp và chứng chỉ sẽ bị coi là không hợp lệ.
+        5. **Kiểm tra thời hạn**: Trình duyệt kiểm tra xem chứng chỉ có còn hiệu lực hay không bằng cách so sánh ngày hiện tại với ngày hết hạn của chứng chỉ.
+- **Tạo khóa phiên**: Trình duyệt tạo khóa phiên, mã hóa nó bằng khóa công khai của máy chủ và gửi lại cho máy chủ. 
+- **Mã hóa dữ liệu**: Máy chủ giải mã khóa phiên (bằng private key ⇒ chỉ máy chủ mới đọc được) và bắt đầu sử dụng nó để mã hóa dữ liệu truyền tải.
+
+## 2. TLS (Transport Layer Security)
 
 Đây là một giao thức mật mã cung cấp bảo mật đầu cuối cho dữ liệu được gửi giữa các ứng dụng qua Internet. TLS phát triển từ SSL (Secure Sockets Layer). TLS không bảo mật dữ liệu trên các hệ thống đầu cuối. Nó chỉ đảm bảo dữ liệu an toàn trên đường truyền qua internet, tránh khả năng bị nghe trộm hoặc thay đổi nội dung.
 
