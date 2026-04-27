@@ -228,3 +228,54 @@ Cách xử lý tốt nhất là fetch dữ liệu cần thiết trong transactio
 ## 6. phân biệt JOIN, JOIN FETCH, EntityGraph
 
 ## 7. Khi Backend (Java) và Frontend (React) "nói chuyện" với nhau qua REST API: Làm thế nào để đảm bảo an toàn cho các API này? Nếu Frontend gửi một request lên và Backend trả về lỗi 403 Forbidden, sẽ kiểm tra những yếu tố nào đầu tiên để debug?
+
+> Khi Java Backend (thường là Spring Boot) và React Frontend giao tiếp qua REST API, “an toàn” không chỉ là chặn người lạ gọi API, mà còn là đảm bảo:
+>
+> - đúng người (Authentication)
+> - đúng quyền (Authorization)
+> - đúng dữ liệu (Validation)
+> - đúng nguồn gọi (CORS, CSRF tùy ngữ cảnh)
+> - đúng cách truyền dữ liệu nhạy cảm (HTTPS, token handling)
+
+### 7.1 Đảm bảo an toàn cho REST API
+
+#### a. Authentication - Xác thực người dùng
+
+- Phổ biến nhất: JWT token, OAuth2, Session + Cookie
+
+#### b. Authorization – Phân quyền
+
+- 403 thường xảy ra mạnh nhất ở đây.
+
+#### c. Validation – Validate input
+
+- Frontend không đáng tin.
+- Sai lầm phổ biến: “Frontend đã validate rồi nên backend khỏi cần”
+
+#### d. HTTPS
+
+- Nếu dùng HTTP thường: token dễ bị sniff, password bị lộ
+- Production bắt buộc HTTPS.
+
+#### e. CORS
+
+- React (localhost:3000) gọi Backend (localhost:8080), Khác origin → browser chặn nếu backend không cho phép
+- CORS lỗi thường không phải 403 business-level, mà browser block.
+
+#### f. CSRF
+
+- Nếu dùng Session + Cookie → cần CSRF
+- Nếu dùng JWT stateless → thường disable CSRF
+
+### 7.2 Khi bị 403 Forbidden → debug gì đầu tiên?
+
+- 401 = chưa xác thực
+- 403 = đã xác thực nhưng không đủ quyền
+- Bước 1: Token có được gửi không?
+- Bước 2: Token backend có parse được không?
+- Bước 3: User có đúng role không?
+- Bước 4: Prefix ROLE_ có đúng không?
+- Bước 5: Cấu hình Security matcher có sai không?
+- Bước 6: CSRF có đang chặn không?
+- Bước 7: CORS có thật sự là vấn đề không?
+- Bước 8: Method Security (@PreAuthorize) có chặn không?
