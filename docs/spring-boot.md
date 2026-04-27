@@ -7,7 +7,7 @@ has_toc: side_bar
 
 # Spring boot
 
-## 1. Phân biệt `@Controller` và `@RestController`
+## 1. Phân biệt **@Controller** và **@RestController**
 
 - `@Controller`: Dùng chủ yếu cho Spring MVC truyền thống — tức là trả về view (JSP, Thymeleaf, Freemarker…).
 - `@RestController`: Dùng cho REST API, tức là trả về data (JSON/XML/plain text) trực tiếp.
@@ -135,6 +135,7 @@ hibernate.default_batch_fetch_size=50
 > Sai lầm phổ biến cho rằng đổi hết sang EAGER là xong
 >
 > Sai. EAGER thường còn nguy hiểm hơn  
+>
 > - query phình to
 > - cartesian product
 > - memory tăng mạnh
@@ -143,7 +144,84 @@ hibernate.default_batch_fetch_size=50
 
 ## 3. LazyInitializationException là gì?
 
-## 4. vì sao @Transactional ảnh hưởng tới lazy loading?
+LazyInitializationException là lỗi rất hay gặp khi dùng JPA/Hibernate, đặc biệt liên quan đến Lazy Loading.
+
+### 3.1 Khái niệm
+
+- Đây là exception xảy ra khi Hibernate cố gắng load một association được đánh dấu LAZY, nhưng lúc đó Session (Persistence Context) đã bị đóng.
+
+### 3.2 Ví dụ
+
+```java
+@Entity
+public class User {
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Order> orders;
+}
+
+//  
+@Transactional
+public User getUser(Long id) {
+    return userRepository.findById(id).get();
+}
+
+// Trong Controller
+User user = userService.getUser(1L);
+
+System.out.println(user.getOrders().size());
+
+// Giải thích:
+// Trong `getUser()`: hibernate mở session, lấy `User`, nhưng không lấy `orders` ngay vì `LAZY`
+// Nó chỉ tạo proxy: Khi nào cần thì tôi mới query
+// Sau khi method kết thúc: transaction đóng, session đóng
+// Lúc này ở Controller gọi: `user.getOrders()`, hibernate mới nói: Ok để tôi query DB lấy orders...
+// nhưng: session đâu rồi? -> không thấy -> `LazyInitializationException` 
+
+```
+
+### 3.3 Bản chất vấn đề
+
+- Không phải lỗi của **LAZY** mà là: truy cập dữ liệu lazy ngoài transaction/session
+
+### 3.4 Cách xử lý đúng
+
+- Load luôn ``user.getOrders().size();`` trong transaction
+- Dùng **JOIN FETCH** (cách chuẩn nhất)
+
+```java
+@Query("""
+    SELECT u FROM User u
+    JOIN FETCH u.orders
+    WHERE u.id = :id
+""")
+User findUserWithOrders(Long id);
+```
+
+### 3.5 Cách xử lý sai hay gặp
+
+- Nhiều người đổi sang **FetchType.EAGER** để hết lỗi. Nhưng cách này chỉ để chữa cháy vì: gây query thừa, dễ tạo N+1 query, giảm performance mạnh
+
+- Oen Session In View (OSIV): Spring boot thường bật mặc định, nó giữ session mở đến tận view layer, nên controller gọi lazy vẫn chạy được. Nhưng che giấu vấn đề thiết kế và có thể gây ra: query lung tung, khó debug performance, DB connection giữ lâu
+
+### 3.6 Tóm tắt
+
+LazyInitializationException xảy ra khi Hibernate cố gắng truy cập một LAZY association sau khi Persistence Context đã đóng.
+
+Nguyên nhân là entity chỉ giữ proxy thay vì dữ liệu thật, và khi cần load thì session không còn tồn tại.
+
+Cách xử lý tốt nhất là fetch dữ liệu cần thiết trong transaction bằng JOIN FETCH, EntityGraph hoặc map sang DTO trong service layer, thay vì chuyển sang EAGER hoặc phụ thuộc vào OSIV.
+
+## 4. vì sao **@Transactional** ảnh hưởng tới lazy loading?
+
+**@Transactional** ảnh hưởng tới Lazy Loading vì nó quyết định Hibernate Session (Persistence Context) còn sống hay không.
+
+- @Transactional → quản lý transaction
+- transaction thường gắn với → Session / EntityManager
+- Lazy Loading cần → Session còn mở để query thêm dữ liệu
+
+> Nhiều người nghĩ có **@Transactional** là để chống lỗi Lazy Loading
+>
+> Sai. Mục đích chính của nó là đảm bảo tính toàn vẹn của transaction, Lazy Loading chỉ là hệ quả phụ
 
 ## 5. Open Session In View là gì?
 
