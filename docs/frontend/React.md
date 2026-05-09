@@ -29,12 +29,90 @@ Khi ứng dụng web trở nên phức tạp, việc quản lý hàng nghìn dò
 
 ## 3. Các khái niệm trong React
 
-## 4. Hooks - Sức mạnh của React hiện đại
+### A. JSX (JavaScript XML)
+
+JSX cho phép chúng ta viết HTML ngay trong JavaScript.
+
+```jsx
+const element = <h1>Chào mừng bạn đến với lớp học React!</h1>;
+```
+
+### B. Props & State (Dữ liệu)
+
+- Props (Properties): Là dữ liệu truyền từ ngoài vào Component (giống như tham số hàm). Props là bất biến (read-only) đối với Component nhận nó.
+- State: Là "trạng thái" nội bộ của Component. Khi State thay đổi, React sẽ tự động vẽ lại (re-render) Component đó trên màn hình.
+
+### C. Virtual DOM (DOM ảo)
+
+Thay vì sửa trực tiếp vào DOM thật của trình duyệt (vốn rất chậm), React tạo ra một bản sao nhẹ hơn. Khi có thay đổi, nó so sánh bản cũ và bản mới, sau đó chỉ cập nhật đúng những chỗ khác biệt vào DOM thật.
+
+## 4. Hooks
+
+- useState: Để quản lý trạng thái. Ví dụ: Một biến đếm số lần click chuột.
+- useEffect: Để xử lý "tác dụng phụ" (side effects). Ví dụ: Gọi API lấy dữ liệu từ server, thiết lập đồng hồ, hoặc thay đổi tiêu đề trang web.
 
 ## 5. Lộ trình tư duy (Mindset) cho người mới
+
+- Chia nhỏ bài toán: Nhìn vào một thiết kế, hãy phân tích xem nó gồm bao nhiêu Component nhỏ.
+- Luồng dữ liệu một chiều: Trong React, dữ liệu chảy từ cha xuống con thông qua Props.
 
 ## 6. Some question
 
 ### 1. Trong React, khi nào sẽ ưu tiên dùng useEffect? nêu một ví dụ mà nếu dùng hook này không khéo sẽ dẫn đến tình trạng "infinite loop" (lặp vô tận)
 
 ### 2. Giữa việc truyền dữ liệu qua Props và sử dụng Context API, dựa trên tiêu chí nào để quyết định nên dùng cách nào?
+
+### 3. Luồng dữ liệu một chiều: Trong React, dữ liệu chảy từ cha xuống con thông qua Props. Vậy chiều ngược lại thì sao?
+
+Trong React, dữ liệu vẫn luôn tuân thủ nguyên tắc Unidirectional Data Flow (Luồng dữ liệu một chiều). Tuy nhiên, để "gửi" thông tin từ con lên cha, chúng ta sử dụng một kỹ thuật gọi là **Callback Functions**.
+
+#### a. Cơ chế Callback Function
+
+Hãy tưởng tượng cha là một Giám đốc và con là Thư ký.
+
+- Chiều xuôi (Props): Giám đốc đưa cho Thư ký một cái phong bì (dữ liệu).
+- Chiều ngược: Giám đốc đưa cho Thư ký một cái máy bộ đàm và bảo: "Khi nào khách đến, hãy bấm nút này để báo cho tôi".
+
+Trong React, "máy bộ đàm" chính là một hàm (function) được định nghĩa ở Component cha và truyền xuống Component con dưới dạng một Prop.
+
+```js
+// Component Cha
+function Parent() {
+  const handleChildClick = (data) => {
+    console.log("Dữ liệu nhận được từ con:", data);
+  };
+
+  return (
+    <div style={{ border: '1px solid black', padding: '20px' }}>
+      <h2>Tôi là Cha</h2>
+      {/* Truyền hàm handleChildClick xuống con qua prop tên là "onNotify" */}
+      <Child onNotify={handleChildClick} />
+    </div>
+  );
+}
+
+// Component Con
+function Child({ onNotify }) {
+  return (
+    <div style={{ border: '1px dotted red', padding: '10px' }}>
+      <h3>Tôi là Con</h3>
+      <button onClick={() => onNotify("Con đã làm xong bài tập!")}>
+        Báo cáo cho Cha
+      </button>
+    </div>
+  );
+}
+```
+
+#### b. Tại sao React lại làm như vậy? Tại sao không cho phép Component con sửa thẳng dữ liệu của cha?
+
+- Dễ kiểm soát (Predictability): Nếu con có thể tự ý sửa dữ liệu của cha, và bạn có 10 Component con cùng sửa một biến, bạn sẽ không bao giờ biết lỗi phát sinh từ đâu (đây gọi là "side effects" khó kiểm soát).
+- Dễ gỡ lỗi (Debugging): Dữ liệu chỉ thay đổi tại nơi nó "sinh ra" (nơi đặt state). Nếu có lỗi, bạn chỉ cần kiểm tra Component cha.
+
+#### c. Các cách liên lạc "nâng cao" khác
+
+Khi ứng dụng của bạn phình to ra, việc truyền hàm qua 5-7 tầng Component (gọi là Prop Drilling) sẽ rất mệt mỏi. Lúc đó chúng ta có các giải pháp:
+
+- Lifting State Up (Nâng trạng thái lên): Nếu hai Component anh em muốn nói chuyện với nhau, chúng ta đặt dữ liệu chung ở Component cha của cả hai.
+- Context API: Tạo ra một "vùng phủ sóng wifi" toàn cầu. Bất cứ Component con nào (dù sâu đến đâu) cũng có thể kết nối và lấy dữ liệu/hàm mà không cần truyền qua từng cấp.
+- State Management (Zustand, Redux...): Một kho chứa dữ liệu riêng biệt nằm ngoài cây Component, nơi bất kỳ ai cũng có thể gửi tín hiệu và nhận dữ liệu.
