@@ -100,7 +100,7 @@ function Counter() {
 
 Kết quả là trình duyệt của bạn sẽ bị treo hoặc báo lỗi _"Maximum update depth exceeded"_ vì vòng lặp này diễn ra hàng nghìn lần mỗi giây.
 
-##### c. Làm sao để tránh bẫy này?
+##### Làm sao để tránh bẫy này?
 
 Có 3 quy tắc vàng để không bao giờ rơi vào vòng lặp vô tận:
 
@@ -127,6 +127,16 @@ Có 3 quy tắc vàng để không bao giờ rơi vào vòng lặp vô tận:
 > Đúng: const fullName = firstName + ' ' + lastName; (Viết trực tiếp trong thân Component).
 
 ### 2. Giữa việc truyền dữ liệu qua Props và sử dụng Context API, dựa trên tiêu chí nào để quyết định nên dùng cách nào?
+
+Hãy coi Props là việc "gửi bưu điện" (phải qua từng trạm) và Context API là "phát sóng radio" (ai bật đài lên là nghe được). Dưới đây là 4 tiêu chí cốt lõi để bạn ra quyết định:
+
+#### a. Độ sâu của cây Component (Cấp bậc truyền tải)
+
+#### b. Bản chất của dữ liệu (Global vs Local)
+
+#### c. Tần suất thay đổi dữ liệu (Performance)
+
+#### d. Khả năng tái sử dụng Component
 
 ### 3. Luồng dữ liệu một chiều: Trong React, dữ liệu chảy từ cha xuống con thông qua Props. Vậy chiều ngược lại thì sao?
 
