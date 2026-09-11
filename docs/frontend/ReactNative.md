@@ -1,9 +1,10 @@
 ---
 layout: default
-# title: Draft
+title: Draft
 # parent: 31. Frontend
 description: ""
-# has_toc: side_bar 
+has_toc: side_bar 
+nav_exclude: true
 ---
 
 # React
