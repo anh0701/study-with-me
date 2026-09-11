@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Draft
+# title: Draft
 # parent: 31. Frontend
 description: ""
 # has_toc: side_bar 
