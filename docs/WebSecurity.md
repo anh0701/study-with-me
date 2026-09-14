@@ -19,7 +19,7 @@ has_toc: side_bar
 
 ### 5.1 HTTPS
 
-[Chi tiết](HTTPvsHTTPS.md)
+[Chi tiết](HTTP-vs-HTTPS.md)
 
 ### 5.2 OWASP Risks
 
